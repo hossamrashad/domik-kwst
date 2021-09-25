@@ -1,0 +1,213 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title About Me
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+            link(rel="stylesheet" href="css/about.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+        main(class="page-about") 
+            div(class="header-wrapper")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-md-8")
+                            div(class="slider-about")
+                                h2(class="h1") Hi i am Lisa - Architect from London 
+                                h3(class="") 
+                                    span All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true
+
+                            div(class="row")
+                                div(class="col-md-3")
+                                    img(src="" alt="")
+                                div(class="col-md-9")
+                                    div(class="disc-bottom-slider")
+                                    p There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
+                                    p  All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words
+                                    a(class="" href="portfolio.html")
+                                        span(class="") View my work
+                                        i(class="fas fa-long-arrow-alt-right fa-1x fa-fw")
+                            div(class="hr")
+                            div(class="row row-parent-jq-countTo")
+                                div(class="col-md-4 ")
+                                    div(class="dash") -
+                                div(class="col-md-8 ")
+                                    div(class="row")
+                                        div(class="col-md-4")
+                                            span(class="jq-countTo countTo-1920 text-center")
+                                            p(class="lead  text-center")  Finished Projects
+                                        div(class="col-md-4")
+                                            span(class="jq-countTo countTo-3450 text-center")
+                                            p(class="lead  text-center")  Happy customers
+                                        div(class="col-md-4")
+                                            span(class="jq-countTo countTo-16700 text-center")
+                                            p(class="lead  text-center")  Working hours
+                                h2(class="h1") What we do
+                                div(class="col-md-4")
+                                    div(class="we-do")
+                                        a(href="images/folio/thumbs/9.jpg" target="_blank") 
+                                            img(src="images/folio/thumbs/9.jpg" alt="")
+                                        div(class="services-info")
+                                            h4(class="") Interior design
+                                            ul 
+                                                li 
+                                                    span Curabitur mi sem
+                                                li 
+                                                    span Euismod in velit
+                                                li 
+                                                    span Proin eu felis hendrerit
+                                div(class="col-md-4")
+                                    div(class="we-do")
+                                        a(href="http://www.youtube.com/watch?v=sR4_EoCyhEo" target="_blank") 
+                                            img(src="images/folio/thumbs/3.jpg" alt="")
+                                        div(class="services-info")
+                                            h4(class="") Design houses
+                                            ul 
+                                                li 
+                                                    span Curabitur mi sem
+                                                li 
+                                                    span Euismod in velit
+                                                li 
+                                                    span Proin eu felis hendrerit
+                                div(class="col-md-4")
+                                    div(class="we-do")
+                                        a(href="http://www.vimeo.com/video/24506451" target="_blank") 
+                                            img(src="images/folio/thumbs/11.jpg" alt="")
+                                        div(class="services-info")
+                                            h4(class="") Industrial premises
+                                            ul 
+                                                li 
+                                                    span Curabitur mi sem
+                                                li 
+                                                    span Euismod in velit
+                                                li 
+                                                    span Proin eu felis hendrerit
+                            div(class="hr")
+
+                            div(class="row")
+                                div(class="title-our-story")
+                                    h2(class="h1") My resume
+                                div(class="resume-head")
+                                    h3(class="h2") 2015
+                                div(class="col-md-3")
+                                div(class="col-md-9")
+                                    h4(class="") Mauris non ligula suscipit
+                                    p(class="lead") Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis vitae
+                                    span(class="font-show-hide-one")
+                                    div(class="clearfix")
+                                    div(class="parent-hide-info")
+                                        div(class="hidden-info hidden-info-one")
+                                            div(class="box-item")
+                                                a(class="" href="images/folio/thumbs/1.jpg" target="_blank")
+                                                    img(src="images/folio/thumbs/1.jpg" alt="")
+                                            div(class="box-item")
+                                                a(class="" href="images/folio/thumbs/2.jpg" target="_blank")
+                                                    img(src="images/folio/thumbs/2.jpg" alt="")
+                                            div(class="box-item")
+                                                a(class="" href="images/folio/thumbs/3.jpg" target="_blank")
+                                                    img(src="images/folio/thumbs/3.jpg" alt="")
+                                            div(class="box-item")
+                                                a(class="" href="images/folio/thumbs/4.jpg" target="_blank")
+                                                    img(src="images/folio/thumbs/4.jpg" alt="")
+                                hr(class="hr-hr")
+
+                                div(class="resume-head")
+                                    h3(class="h2") 2012
+                                div(class="col-md-3")
+                                div(class="col-md-9")
+                                    h4(class="") Mauris non ligula suscipit
+                                    p(class="lead") Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis vitae
+
+                                div(class="resume-head")
+                                    h3(class="h2") 2010
+                                div(class="col-md-3")
+                                div(class="col-md-9")
+                                    h4(class="") Mauris non ligula suscipit
+                                    p(class="lead") Vestibulum orci felis, ullamcorper non condimentum non, ultrices ac nunc. Mauris non ligula suscipit, vulputate mi accumsan, dapibus felis. Nullam sed sapien dui. Nulla auctor sit amet sem non porta. Integer iaculis tellus nulla, quis imperdiet magna venenatis vitae
+                                    span(class="font-show-hide-one")
+                                    div(class="clearfix")
+                                    div(class="parent-hide-info")
+                                        div(class="vp-video")
+                                            iframe(src="http://player.vimeo.com/video/24506451?color=000000&amp;title=0&amp;badge=0" width="100%" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen) 
+                                hr(class="hr-hr")
+                                a(class="" href="#")
+                                    span(class="") Download Resume
+                                    i(class="fas fa-long-arrow-alt-right fa-1x fa-fw")
+
+
+
+
+
+
+
+
+
+
+
+            //- bg-animate
+            div(class="parent-bg-animate")
+                div(class="bg-animate")
+                    img(src="images/body-bg.png" alt="")
+
+
+            div(class="wrapper")
+                div(class="wrapper-child")
+                    div(class="container")
+                        div(class="row")
+                            div(class="col-xs-12 col-sm-12 col-md-8")
+                                div(class="section-left")
+
+
+
+                    div(class=" d-md-none d-sm-none d-lg-block") 
+
+
+
+
+        //- +btnTow('read')
+        include footer/footer.pug
+
+
+
+
+        //- Start Global
+        include global/global.pug
+        //- End Global
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        //- Jquery Tools
+        script(src="js/libs/countTo/jquery.countTo.js")
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="js/JQueryTools/JQueryTools.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

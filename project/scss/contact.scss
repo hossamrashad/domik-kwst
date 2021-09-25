@@ -1,0 +1,42 @@
+.title-input {
+  border-bottom: 10px solid #000;
+  padding-top: 100px;
+  padding-bottom: 60px;
+  a {
+    display: block;
+    color: #000;
+  }
+}
+.contact-form {
+  form {
+    input,
+    textarea {
+      border: none;
+      border-bottom: 3px solid #999;
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+        border-bottom: 3px solid #999;
+      }
+    }
+    .number {
+      width: 100px !important;
+    }
+    button {
+    //   float: left;
+      border: none;
+      background: none;
+      padding: 15px 30px 15px 0;
+      line-height: 17px;
+      cursor: pointer;
+      letter-spacing: 2px;
+      font-weight: 800;
+      font-size: 16px;
+      color: #000;
+      letter-spacing: 2px;
+      -webkit-appearance: none;
+      font-family: "FuturaPT-Book";
+      transition: all 200ms linear;
+    }
+  }
+}

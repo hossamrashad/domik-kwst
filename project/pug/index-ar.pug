@@ -1,0 +1,31 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+html(lang="ar" dir="rtl" data-theme="light") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Home Page Ar
+
+    //- end head
+
+    body 
+        //- start body
+        
+        
+
+
+
+
+
+        //- Start Global
+        //- include global/global.pug
+        //- End Global
+        //- div(class='' id="Element")
+
+        include script/script.pug
+        script(src="http://localhost:35729/livereload.js")
+        //- end body

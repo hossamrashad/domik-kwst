@@ -1,0 +1,22 @@
+.height-emulator {
+    height: 280.9px;
+    width: 100%;
+    position: relative;
+    z-index: 1;
+}
+
+.footer {
+    opacity: 1;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    padding: 60px 0 0;
+    z-index: 2;
+    opacity: 0;
+    transform: translate3d(0, 0, 0);
+    background-color: #fff;
+    a {
+        color: #000 !important;
+    }
+}

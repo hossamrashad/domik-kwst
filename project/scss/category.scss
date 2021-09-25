@@ -1,0 +1,79 @@
+@import "./mixin/mixin";
+
+.slider-blog {
+  margin: 100px 0;
+}
+
+.child {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  margin: 60px 0;
+  .img {
+    padding: 20px 0;
+    img {
+      transition: all 0.3s linear;
+    }
+    @include hover {
+      img {
+        filter: brightness(0.4);
+        transform: scale(1.1);
+      }
+    }
+  }
+  .text {
+    a {
+      display: block;
+      color: #333;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
+    span {
+      margin-bottom: 10px;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 6px;
+    background-color: #333;
+    transition: all 0.3s linear;
+  }
+  @include hover {
+    &::before {
+      width: 50px;
+    }
+  }
+}
+// content-nav
+.content-nav {
+  display: flex;
+  justify-content: flex-start;
+  height: 50px;
+  margin: 60px 0;
+  .left {
+    width: 100%;
+    a {
+      color: #000;
+      padding: 0 10px 0 0;
+      i {
+        font-size: 33px;
+      }
+    }
+  }
+
+  .right {
+    direction: rtl;
+    width: 100%;
+    a {
+      color: #000;
+      i {
+        font-size: 23px;
+      }
+    }
+  }
+}

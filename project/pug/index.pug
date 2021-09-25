@@ -1,0 +1,77 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Home Page En
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+            link(rel="stylesheet" href="css/homepage.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+        div(class="slider ")
+            div(class="one")
+            div(class="tow")
+            div(class="three")
+
+        //- dic(class="jq-nivo-slider")
+        //-     div(class="slider-wrapper")
+        //-         div(class="slider-active")
+        //-             img(src="images/bg/22.jpg" alt="alt" title="#slider-content-1")
+        //-             img(src="images/bg/22.jpg" alt="alt" title="#slider-content-2")
+        //-             img(src="images/bg/24.jpg" alt="alt" title="#slider-content-3")
+        //-         div(class="slider-content" id="slider-content-1")
+        //-             div(class="slider-disc")
+        //-                 div(class="slider-bg animated zoomIn")
+        //-                     a(class="" href="portfolio-single.html") Blandit praesent
+        //-                     p(class="lead") Ut wisi enim ad minim veniam, quis nostrud exerci
+        //-         div(class="slider-content" id="slider-content-2")
+        //-             div(class="slider-disc")
+        //-                 div(class="slider-bg animated zoomIn")
+        //-                     a(class="" href="portfolio-single.html") Blandit praesent
+        //-                     p(class="lead") Ut wisi enim ad minim veniam, quis nostrud exerci
+        //-         div(class="slider-content" id="slider-content-3")
+        //-             div(class="slider-disc")
+        //-                 div(class="slider-bg animated zoomIn")
+        //-                     a(class="" href="portfolio-single.html") Blandit praesent
+        //-                     p(class="lead") Ut wisi enim ad minim veniam, quis nostrud exerci
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        //- Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="js/JQueryTools/JQueryTools.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body
