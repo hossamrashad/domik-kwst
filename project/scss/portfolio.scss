@@ -3,10 +3,43 @@
 .header-title-disk {
   margin-top: 200px;
   margin-bottom: 50px;
-  h2 {
-  }
   p {
-    width: 50%;
+    @include mq(10000px) {
+      font-size: 21px;
+      margin: 15px 0;
+    }
+    @include mq(1566px) {
+      font-size: 20px;
+      margin: 15px 0;
+    }
+    @include mq(1200px) {
+      font-size: 19px;
+      margin: 15px 0;
+    }
+    @include mq(992px) {
+      font-size: 18px;
+      margin: 15px 0;
+    }
+    @include mq(786px) {
+      font-size: 17px;
+      margin: 15px 0;
+    }
+    @include mq(576px) {
+      font-size: 16px;
+      margin: 15px 0;
+    }
+    @include mq(450px) {
+      font-size: 15px;
+      margin: 15px 0;
+    }
+    @include mq(350px) {
+      font-size: 14px;
+      margin: 15px 0;
+    }
+    @include mq(250px) {
+      font-size: 11px;
+      margin: 15px 0;
+    }
   }
 }
 
@@ -14,14 +47,15 @@
   margin-top: 100px;
   display: grid;
   gap: 0px 0px;
-  @include xs-media {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  @include mq(500px){
+      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
-  @include sm-md-media {
-    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+@include mq(786px){
+      grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   }
-  @include md-media {
-    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
+  @include mq(1200px){
+      grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   }
   .grid-item-child {
     position: relative;
@@ -86,6 +120,8 @@
   position: fixed;
   bottom: 0;
   right: 0;
+  background-color: #fff;
+  border-radius: 5px;
   button {
     border: 2px solid transparent;
     transition: all 0.3s linear;
@@ -95,6 +131,9 @@
     }
     @include hover {
       border: 2px solid #333;
+    }
+    @include mq(300px){
+        font-size: 12px;
     }
   }
 }

@@ -77,17 +77,6 @@ img {
 .share {
   position: fixed;
   top: 0;
-// start ar
-  @include xs-media{
-      right: 28%;
-  }
-      right: 28%;
-@include mq(300px){
-      right: 28%;
-    
-}
-
-// end ar
   padding: 30px 25px;
   z-index: 2000;
   text-decoration: none;
@@ -99,20 +88,13 @@ img {
   &:hover {
     color: #666 !important;
   }
-  @include xs-media {
-    // display: none;
-    right: 5%;
-  }
-  @include sm-md-media {
-    // display: none;
-  }
   &::before {
     content: "";
     position: absolute;
     bottom: 0;
     left: 0;
     width: 5%;
-    height: 90%;
+    height: 80%;
     border-left: 8px solid #ddd;
     z-index: 1;
   }
@@ -129,9 +111,106 @@ img {
   }
   &:hover {
     &::after {
-      height: 90%;
+      height: 30px;
     }
   }
+  // start ar
+  
+  @include mq(10566px) {
+    right: 2% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(1200px) {
+    right: 2% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(992px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(786px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(576px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(500px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(400px) {
+    right: 18% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(300px) {
+    right: 18% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px !important;
+    }
+    &::before {
+      height: 0px !important;
+    }
+  }
+  // end ar
 }
 
 li.share {
@@ -141,7 +220,7 @@ li.share {
 // Links
 .links {
   position: fixed;
-  top: -80px;
+  top: -50px;
   right: 36%;
   z-index: 20000;
   height: 75px;
@@ -152,8 +231,7 @@ li.share {
   span {
     display: inline-block;
     margin: 10px 0;
-    padding: 50px 22px;
-    padding: 20px 22px;
+    padding: 15px 22px;
     a {
       text-decoration: none;
       text-transform: uppercase;
@@ -171,7 +249,7 @@ li.share {
 }
 
 .active-share {
-  top: 0;
+  top: -5px;
 }
 
 .opacity0 {
@@ -200,12 +278,52 @@ li.share {
 
 .section-right {
   height: 100vh;
-  width: 35%;
-  // background-color: #333;
+  width: 33%;
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 10000;
+  z-index: 10;
   background-image: url(../images/bg/long/2.jpg);
-  // background-image: url(images/bg/long/2.jpg);
+  @include xs-media {
+    display: none;
+  }
+  @include sm-md-media {
+    display: none;
+  }
+}
+// Animate
+.parent-bg-animate {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+
+  .bg-animate {
+    background-color: rgb(241, 241, 241);
+    opacity: 0.6;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 60%;
+    height: 60%;
+    z-index: -2;
+    // opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0.1;
+    animation: loopCircle 30s linear 0s infinite normal;
+  }
+}
+@keyframes loopCircle {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 180deg);
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+  }
+}
+.display-none{
+  display: none;
+  transition: all 0.3s linear;
 }

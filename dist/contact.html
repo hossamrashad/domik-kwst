@@ -54,26 +54,11 @@
           <ul class="navbar-nav jq-scroll-to-element">
             <li class="nav-item" rel="one" data-text="Home"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
             <li class="nav-item"><a class="nav-link" href="#">Projects</a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">About us  </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li> <a class="dropdown-item" href="about.html">About Us </a></li>
-                <li> <a class="dropdown-item" href="story.html">story </a></li>
-                <li> <a class="dropdown-item" href="services.html">services </a></li>
-              </ul>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About Us </a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact </a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blog </a></li>
-            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li> <a class="dropdown-item" href="home.html">Home</a></li>
-                <li> <a class="dropdown-item" href="aboutMe.html">about me </a></li>
-                <li> <a class="dropdown-item" href="category.html">category </a></li>
-                <li> <a class="dropdown-item" href="blogSingle.html">blog single </a></li>
-                <li> <a class="dropdown-item" href="portfolio.html">portfolio</a></li>
-                <li> <a class="dropdown-item" href="portfolioSingle.html">portfolio single</a></li>
-                <li> <a class="dropdown-item" href="404.html">404</a></li>
-              </ul>
-            </li>
+            <li class="nav-item"><a class="nav-link" href="portfolio.html">portfolio </a></li>
+            <li class="nav-item"><a class="nav-link" href="category.html">category </a></li>
           </ul>
         </div>
       </div>
@@ -82,12 +67,14 @@
     <div class="container">
       <div class="row">
         <div class="col-md-8">
-          <div class="header-title-disk">
+          <div class="header-title-disk-contact">
             <h2 class="h1">Want to order a project ?<br>Contact with us</h2>
             <p>All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true .</p>
           </div>
           <div class="hr"></div>
-          <div class="jq-map"></div>
+          <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!…" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen> </iframe>
+          </div>
           <div class="title-input">       
             <h3 class="h1">Contact details :</h3>
             <h5>Office in New York</h5><a href="#"> 27th Brooklyn New York, NY 10065</a><a href="#"> +7(111)123456789</a><a href="#"> yourmail@domain.com</a>
@@ -111,40 +98,39 @@
                 <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea4" style="height: 200px"></textarea>
                 <label for="floatingTextarea4">Comments</label>
               </div>
-              <div class="mb-3">
-                <label class="form-label" for="exampleInputEmail6"> How many gnomes were in the story about the "Snow-white" ?</label>
-                <input class="form-control number" type="number" id="exampleInputEmail6" aria-describedby="emailHelp" value="0">
-              </div>
               <button class="mt-3" type="submit" id="submit"> <span>Send </span><i class="fas fa-long-arrow-alt-right fa-fw"></i></button>
             </form>
+            <div class="hr"></div>
           </div>
-          <div class="hr"></div>
         </div>
       </div>
-    </div>
-    <div class="height-emulator"></div>
-    <footer class="footer">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3"><img src="images/footer-logo.png" alt="alt"></div>
-          <div class="col-md-2"></div>
-          <div class="col-md-7">
-            <div class="row">
-              <div class="col-xs-6">
-                <div class="footer-address"> <span class="d-block">USA 27TH BROOKLYN NY</span><a href="#" target="_blank">View On Map</a></div>
-              </div>
-              <div class="col-xs-6">
-                <div class="footer-contact"><span class="d-block">+7(111)123456789</span><a href="#" target="_blank">yourmail@domain.com</a></div>
+      <footer class="footer" id="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3"><img src="images/footer-logo.png" alt="alt"></div>
+            <div class="col-md-2"></div>
+            <div class="col-md-7">
+              <div class="row">
+                <div class="col-xs-6">
+                  <div class="footer-address"> <span class="d-block">USA 27TH BROOKLYN NY</span><a href="#" target="_blank">View On Map</a></div>
+                </div>
+                <div class="col-xs-6">
+                  <div class="footer-contact"><span class="d-block">+7(111)123456789</span><a href="#" target="_blank">yourmail@domain.com</a></div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-md-5"></div>
-          <div class="col-md-7">
-            <p> © Domik   2015.  All rights reserved.  </p>
+            <div class="col-md-5"></div>
+            <div class="col-md-7">
+              <p> © Domik   2015.  All rights reserved.  </p>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+      <div class="d">.</div>
+    </div>
+    <div class="section-right d-md-none d-sm-none d-lg-block"> 
+      <div class="section-right"></div>
+    </div>
     <!-- JQuery-->
     <script src="js/libs/JQuery/jquery-3-6-0.min.js"></script>
     <!-- bootstrap-->
@@ -153,8 +139,6 @@
     <script src="js/libs/nivo-slider/jquery.nivo.slider.pack.js"></script>
     <script src="js/libs/nivo-slider/jquery.nivo.slider.js"></script>
     <script src="js/libs/countTo/jquery.countTo.js"></script>
-    <script src="http://maps.google.com/maps/api/js"> </script>
-    <script src="js/libs/gmap/gmaps.min.js"></script>
     <script src="js/libs/isotope/isotope-docs.min.js"></script>
     <script src="js/libs/plugin-work/plugin-work.js"></script>
     <script src="js/JQueryTools/JQueryTools.js"></script>

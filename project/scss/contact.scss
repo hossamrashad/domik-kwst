@@ -1,3 +1,36 @@
+@import './mixin/mixin';
+.header-title-disk-contact{
+  margin: 150px 0;
+  @include mq(10000px) {
+    width: 70%;
+
+  }
+  @include mq(1566px) {
+    width: 70%;
+
+  }
+  @include mq(1200px) {
+    width: 70%;
+
+  }
+  @include mq(992px) {
+    width: 70%;
+  }
+  @include mq(786px) {
+    width: 100%;
+
+  }
+  @include mq(576px) {
+  }
+  @include mq(450px) {
+  }
+  @include mq(350px) {
+  }
+  @include mq(250px) {
+    width: 100%;
+
+  }
+}
 .title-input {
   border-bottom: 10px solid #000;
   padding-top: 100px;

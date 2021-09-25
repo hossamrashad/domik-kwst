@@ -1322,7 +1322,18 @@ $('.share').on('click', function() {
 // font-show-hide-one
 
 $(".font-show-hide-one").on('click',function(){
-    
-    
     $(".parent-hide-info").slideToggle();
+    $(".font-show-hide-one .right").toggleClass("display-none");
+
 })
+
+$(window).on('scroll', function() {
+  // Code
+  var scrollTop = $(window).scrollTop();
+  console.log(scrollTop);
+  if(scrollTop > 500){
+    $(".footer").fadeIn(1000);
+  } else {
+    $(".footer").fadeOut(1000);
+  }
+});

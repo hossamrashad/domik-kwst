@@ -79,29 +79,84 @@ gulp.task("scss", function () {
     .pipe(notify("Scss Task Is Done"));
 });
 
-gulp.task("scss-file", function () {
-  return (
-    gulp
-      .src([
-        "project/scss/style-rtl.scss",
-        "project/scss/homepage.scss",
-        "project/scss/blog.scss",
-        "project/scss/about.scss",
-        "project/scss/category.scss",
-        "project/scss/contact.scss",
-        "project/scss/portfolio.scss",
-      ])
-      .pipe(sourcemaps.init())
-      .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
-      .pipe(autoprefixer("last 20 versions"))
-      // .pipe(concat("style.css"))
-      .pipe(sourcemaps.write("."))
-      .pipe(gulp.dest("dist/css"))
-      .pipe(livereload())
-      .pipe(notify("Scss Files Task Is Done"))
-  );
+gulp.task("scss-style-rtl", function () {
+  return gulp
+    .src(["project/scss/style-rtl.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss Style Rtl Task Is Done"));
 });
 
+gulp.task("scss-homepage", function () {
+  return gulp
+    .src(["project/scss/homepage.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss Homepage Task Is Done"));
+});
+gulp.task("scss-blog", function () {
+  return gulp
+    .src(["project/scss/blog.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss blog Task Is Done"));
+});
+gulp.task("scss-about", function () {
+  return gulp
+    .src(["project/scss/about.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss About Task Is Done"));
+});
+gulp.task("scss-category", function () {
+  return gulp
+    .src(["project/scss/category.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss category Task Is Done"));
+});
+gulp.task("scss-contact", function () {
+  return gulp
+    .src(["project/scss/contact.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss contact Task Is Done"));
+});
+gulp.task("scss-portfolio", function () {
+  return gulp
+    .src(["project/scss/portfolio.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss portfolio Task Is Done"));
+});
 // ============================== Task Jquery ============================== //
 gulp.task("JQueryTools", function () {
   return gulp
@@ -211,18 +266,13 @@ gulp.task("watch", function () {
   gulp.watch("project/pug/**/*.pug", gulp.series("html"));
   // = Css
   gulp.watch("project/scss/**/*.scss", gulp.series("scss"));
-  gulp.watch(
-    [
-      "project/scss/style-rtl.scss",
-      "project/scss/homepage.scss",
-      "project/scss/blog.scss",
-      "project/scss/about.scss",
-      "project/scss/category.scss",
-      "project/scss/contact.scss",
-      "project/scss/portfolio.scss",
-    ],
-    gulp.series("scss-file")
-  );
+  gulp.watch(["project/scss/style-rtl.scss"], gulp.series("scss-style-rtl"));
+  gulp.watch(["project/scss/homepage.scss"], gulp.series("scss-homepage"));
+  gulp.watch(["project/scss/blog.scss"], gulp.series("scss-blog"));
+  gulp.watch(["project/scss/about.scss"], gulp.series("scss-about"));
+  gulp.watch(["project/scss/category.scss"], gulp.series("scss-category"));
+  gulp.watch(["project/scss/contact.scss"], gulp.series("scss-contact"));
+  gulp.watch(["project/scss/portfolio.scss"], gulp.series("scss-portfolio"));
   gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // = Javascript
   gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));

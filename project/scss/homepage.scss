@@ -119,7 +119,7 @@ body {
   display: grid;
   gap: 0px 0px;
   height: calc(100vh - 10px);
-  @include md-media {
+  @include media-b5(md) {
     grid-template-columns: repeat(auto-fill, minmax(33.333%, 1fr));
   }
   @include media-b5(xs) {
@@ -137,6 +137,9 @@ body {
     @include media-b5(xs) {
       display: none;
     }
+    @include media-b5(md) {
+      display: block;
+    }
   }
   .three {
     background-image: url(../images/bg/3.jpeg);
@@ -144,6 +147,9 @@ body {
     width: 100%;
     @include media-b5(xs) {
       display: none;
+    }
+    @include media-b5(md) {
+      display: block;
     }
   }
 }
