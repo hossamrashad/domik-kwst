@@ -48,14 +48,14 @@
   display: grid;
   gap: 0px 0px;
   grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
-  @include mq(500px){
-      grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  @include mq(500px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
   }
-@include mq(786px){
-      grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  @include mq(786px) {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   }
-  @include mq(1200px){
-      grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  @include mq(1200px) {
+    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
   }
   .grid-item-child {
     position: relative;
@@ -85,6 +85,7 @@
         background-color: #fff;
         display: block;
         width: 100%;
+        padding: 20px 0 10px 0 ;
         h4 {
           a {
             color: #000;
@@ -94,8 +95,7 @@
         }
       }
     }
-    .style-grid {
-    }
+
     transition: all 0.3 linear;
 
     @include hover {
@@ -103,17 +103,6 @@
         bottom: 0;
       }
     }
-  }
-  .grid-item,
-  .grid-sizer {
-    width: 33%;
-    height: 250px;
-  }
-  .grid-item--width2 {
-    width: 66%;
-  }
-  .grid-item--height2 {
-    height: 500px;
   }
 }
 .btn-filet {
@@ -132,8 +121,8 @@
     @include hover {
       border: 2px solid #333;
     }
-    @include mq(300px){
-        font-size: 12px;
+    @include mq(300px) {
+      font-size: 12px;
     }
   }
 }

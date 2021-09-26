@@ -1,31 +1,78 @@
 include variables/variables.pug
 include mixin/mixin.pug
 doctype 
-html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="ar" dir="rtl" data-theme="light")  
+    //- html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
 
     head 
         //- start head  
         include head/head.pug
 
         block pageTitle
-            title Home Page Ar
+            title الصفحة الرئيسية 
 
+        block Bootstrap
+            //- Bootstrap 5.0.1 ar
+            // Bootstrap 5.0.1 ar
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.rtl.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.rtl.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+            link(rel="stylesheet" href="css/homepage.css")
     //- end head
 
     body 
         //- start body
-        
-        
+        include header/header-ar.pug
+
+        div(class="owl-carousel owl-theme" )
+            div(class="item")
+                img(src="images/bg/1.jpeg" alt="")
+            div(class="item")
+                img(src="images/bg/2.jpeg" alt="")
+            div(class="item")
+                img(src="images/bg/3.jpeg" alt="")
+
+
+
+        span(class="d-none" id="portfolio-list")
+        span(class="countTo-1920 d-none")
+        //- dic(class="jq-nivo-slider")
+        //-     div(class="slider-wrapper")
+        //-         div(class="slider-active")
+        //-             img(src="images/bg/22.jpg" alt="alt" title="#slider-content-1")
+        //-             img(src="images/bg/22.jpg" alt="alt" title="#slider-content-2")
+        //-             img(src="images/bg/24.jpg" alt="alt" title="#slider-content-3")
+        //-         div(class="slider-content" id="slider-content-1")
+        //-             div(class="slider-disc")
+        //-                 div(class="slider-bg animated zoomIn")
+        //-                     a(class="" href="portfolio-single.html") Blandit praesent
+        //-                     p(class="lead") Ut wisi enim ad minim veniam, quis nostrud exerci
+        //-         div(class="slider-content" id="slider-content-2")
+        //-             div(class="slider-disc")
+        //-                 div(class="slider-bg animated zoomIn")
+        //-                     a(class="" href="portfolio-single.html") Blandit praesent
+        //-                     p(class="lead") Ut wisi enim ad minim veniam, quis nostrud exerci
+        //-         div(class="slider-content" id="slider-content-3")
+        //-             div(class="slider-disc")
+        //-                 div(class="slider-bg animated zoomIn")
+        //-                     a(class="" href="portfolio-single.html") Blandit praesent
+        //-                     p(class="lead") Ut wisi enim ad minim veniam, quis nostrud exerci
 
 
 
 
 
-        //- Start Global
-        //- include global/global.pug
-        //- End Global
-        //- div(class='' id="Element")
 
         include script/script.pug
+        
+
+        //- Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="js/JQueryTools/JQueryTools.js")
         script(src="http://localhost:35729/livereload.js")
+
         //- end body

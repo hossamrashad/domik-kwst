@@ -28,10 +28,18 @@ html(lang="en" data-theme="light")
         //- start body
         include header/header.pug
 
-        div(class="slider ")
-            div(class="one")
-            div(class="tow")
-            div(class="three")
+        div(class="owl-carousel owl-theme" )
+            div(class="item")
+                img(src="images/bg/1.jpeg" alt="")
+            div(class="item")
+                img(src="images/bg/2.jpeg" alt="")
+            div(class="item")
+                img(src="images/bg/3.jpeg" alt="")
+
+
+
+        span(class="d-none" id="portfolio-list")
+        span(class="countTo-1920 d-none")
 
         //- dic(class="jq-nivo-slider")
         //-     div(class="slider-wrapper")
@@ -61,6 +69,7 @@ html(lang="en" data-theme="light")
 
 
         include script/script.pug
+
         //- Jquery Tools
         script(src="js/libs/plugin-work/plugin-work.js")
         script(src="js/JQueryTools/JQueryTools.js")
