@@ -70,7 +70,7 @@ img {
 }
 
 // share
-.share {
+.share-left {
   position: fixed;
   top: 0;
   padding: 30px 25px;
@@ -81,6 +81,7 @@ img {
   letter-spacing: 1px;
   color: #666;
   cursor: pointer;
+  left: 0;
   &:hover {
     color: #666 !important;
   }
@@ -113,7 +114,7 @@ img {
   // start ar
 
   @include mq(10566px) {
-    right: 2% !important;
+    left: 2% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -125,7 +126,7 @@ img {
     }
   }
   @include mq(1200px) {
-    right: 2% !important;
+    left: 2% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -137,7 +138,7 @@ img {
     }
   }
   @include mq(992px) {
-    right: 10% !important;
+    left: 10% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -149,7 +150,7 @@ img {
     }
   }
   @include mq(786px) {
-    right: 10% !important;
+    left: 10% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -161,7 +162,7 @@ img {
     }
   }
   @include mq(576px) {
-    right: 10% !important;
+    left: 10% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -173,7 +174,7 @@ img {
     }
   }
   @include mq(500px) {
-    right: 10% !important;
+    left: 10% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -185,7 +186,7 @@ img {
     }
   }
   @include mq(400px) {
-    right: 18% !important;
+    left: 18% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -197,7 +198,7 @@ img {
     }
   }
   @include mq(300px) {
-    right: 18% !important;
+    left: 18% !important;
     top: -6px !important;
     &::after {
       height: 0px !important;
@@ -214,7 +215,7 @@ li.share {
 }
 
 // Links
-.links {
+.links-left {
   position: fixed;
   top: -50px;
   right: 36%;

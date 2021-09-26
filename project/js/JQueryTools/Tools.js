@@ -1022,6 +1022,11 @@ $('.share').on('click', function() {
     $(".navbar-nav").toggleClass("opacity0");
     // $(".navbar-nav:last").removeClass("opacity0");
 })
+$(".share-left").on("click", function () {
+  $(".links-left").toggleClass("active-share");
+  $(".navbar-nav").toggleClass("opacity0");
+  // $(".navbar-nav:last").removeClass("opacity0");
+});
 
 // font-show-hide-one
 
