@@ -138,7 +138,7 @@ img {
     }
   }
   @include mq(992px) {
-    left: 10% !important;
+    left: 0% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -150,7 +150,7 @@ img {
     }
   }
   @include mq(786px) {
-    left: 10% !important;
+    left: 16% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -162,7 +162,7 @@ img {
     }
   }
   @include mq(576px) {
-    left: 10% !important;
+    left: 16% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -174,7 +174,7 @@ img {
     }
   }
   @include mq(500px) {
-    left: 10% !important;
+    left: 15% !important;
     top: -6px !important;
     &::after {
       height: 0px;
@@ -218,13 +218,16 @@ li.share {
 .links-left {
   position: fixed;
   top: -50px;
-  right: 36%;
+  left: 36%;
   z-index: 20000;
   height: 75px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   transition: all 0.5s linear;
+  @include mq(350px){
+      left: 31%;
+  }
   span {
     display: inline-block;
     margin: 10px 0;
