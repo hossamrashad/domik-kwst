@@ -1,4 +1,10 @@
 @import './mixin/mixin';
+// Global
+.section-right-parent{
+  background-image: url(../images/bg/long/9.jpg);
+}
+
+
 .header-title-disk-contact{
   margin: 150px 0;
   @include mq(10000px) {

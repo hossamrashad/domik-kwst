@@ -1,0 +1,122 @@
+@import "./mixin/mixin";
+
+// Global
+.section-right-parent{
+  background-image: url(../images/bg/long/7.jpg);
+}
+  .slider-blog {
+      margin: 200px 0 50px 0;
+      h3.h5 {
+        @include mq(10000px) {
+          font-size: 21px;
+          margin: 15px 0;
+        }
+        @include mq(1566px) {
+          font-size: 20px;
+          margin: 15px 0;
+        }
+        @include mq(1200px) {
+          font-size: 19px;
+          margin: 15px 0;
+        }
+        @include mq(992px) {
+          font-size: 18px;
+          margin: 15px 0;
+        }
+        @include mq(786px) {
+          font-size: 17px;
+          margin: 15px 0;
+        }
+        @include mq(576px) {
+          font-size: 16px;
+          margin: 15px 0;
+        }
+        @include mq(450px) {
+          font-size: 15px;
+          margin: 15px 0;
+        }
+        @include mq(350px) {
+          font-size: 14px;
+          margin: 15px 0;
+        }
+        @include mq(250px) {
+          font-size: 11px;
+          margin: 15px 0;
+        }
+      }
+    }
+.page-category{
+.child {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  width: 100%;
+  margin: 60px 0;
+  .img {
+    padding: 20px 0;
+    img {
+      transition: all 0.3s linear;
+    }
+    @include hover {
+      img {
+        filter: brightness(0.4);
+        transform: scale(1.1);
+      }
+    }
+  }
+  .text {
+    a {
+      display: block;
+      color: #333;
+      font-weight: bold;
+      padding-bottom: 15px;
+    }
+    span {
+      margin-bottom: 10px;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 0px;
+    height: 6px;
+    background-color: #333;
+    transition: all 0.3s linear;
+  }
+  @include hover {
+    &::before {
+      width: 50px;
+    }
+  }
+}
+}
+// content-nav
+.content-nav {
+  display: flex;
+  justify-content: flex-end;
+  height: 50px;
+  margin: 60px 0;
+  .left {
+    width: 100%;
+    a {
+      color: #000;
+      padding: 0 10px 0 0;
+      i {
+        font-size: 33px;
+      }
+    }
+  }
+
+  .right {
+    direction: ltr;
+    width: 100%;
+    a {
+      color: #000;
+      i {
+        font-size: 23px;
+      }
+    }
+  }
+}

@@ -1,13 +1,10 @@
 @import "./mixin/mixin";
-@import "./footer/footer";
-body {
-  //   background-color: rgb(255, 255, 255);
-  // height: 3000px;
-}
+@import "./variables/variables";
+
+
 
 main.page-about {
   position: relative;
-
   .header-wrapper {
     padding-top: 130px;
     background-color: #fff;
@@ -22,7 +19,7 @@ main.page-about {
         max-width: 75%;
         text-transform: uppercase;
         padding-bottom: 20px;
-        letter-spacing: 2px;
+        // letter-spacing: 2px;
         font-weight: bold;
         @include mq(250px) {
           font-size: 30px;
@@ -38,7 +35,7 @@ main.page-about {
         line-height: 26px;
         font-size: 12px;
         font-weight: bold;
-        text-align: left;
+        // text-align: left;
         font-family: "futurastd-bold";
         text-transform: uppercase;
         margin-bottom: 10px;
@@ -334,15 +331,13 @@ main.page-about {
     position: relative;
     height: 85px;
     padding: 20px;
-    &::before{
-      content: '';
-      position: absolute;
-      width: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    p{
+        width: 100px;
       height: 6px;
       background-color: #000;
-      top: 38px;
-      // ar
-      right: 20px;
     }
   }
   .font-show-hide-one {

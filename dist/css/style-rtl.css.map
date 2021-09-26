@@ -1,1 +1,0 @@
-{"version":3,"sources":["layout/_style-rtl.scss"],"names":[],"mappings":"AAAA,YACE,gBAAA","file":"style-rtl.css","sourcesContent":[".text-right {\r\n  text-align: right;\r\n}\r\n"]}

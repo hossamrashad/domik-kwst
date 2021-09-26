@@ -45,47 +45,71 @@
 
 .parent-grid-item {
   margin-top: 100px;
+  margin-bottom: 100px;
   display: grid;
   gap: 0px 0px;
-  grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
-  @include mq(500px) {
-    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  @include mq(10000px) {
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   }
-  @include mq(786px) {
-    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+  @include mq(1566px) {
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   }
   @include mq(1200px) {
-    grid-template-columns: repeat(auto-fill, minmax(45%, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(33%, 1fr));
   }
+  @include mq(787px,992px) {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  @include mq(577px, 786px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  @include mq(576px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  @include mq(450px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  @include mq(350px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  @include mq(250px) {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+
   .grid-item-child {
-    position: relative;
     height: 250px;
     overflow: hidden;
-    display: inline-block;
     .grid-item {
       height: 100%;
-      display: block;
       width: 100%;
+      display: block;
+      position: relative;
       .img {
         height: 100%;
         width: 100%;
+        position: relative;
         a {
           height: 100%;
+          width: 100%;
+          display: block;
           img {
             height: 100%;
             width: 100%;
+            transition: all 0.3s linear;
           }
         }
       }
+
       .text {
         position: absolute;
-        bottom: -50%;
         left: 0;
-        transition: all 0.3 linear;
-        background-color: #fff;
-        display: block;
+        bottom: 0;
         width: 100%;
-        padding: 20px 0 10px 0 ;
+        height: 0%;
+        opacity: 0;
+        background-color: #fff;
+        padding: 20px 0 10px 10px;
+        transition: all 0.3 linear;
         h4 {
           a {
             color: #000;
@@ -94,21 +118,23 @@
         span {
         }
       }
-    }
-
-    transition: all 0.3 linear;
-
-    @include hover {
-      .text {
-        bottom: 0;
+      @include hover {
+        img {
+          filter: brightness(0.4);
+        }
+        .text {
+          height: 50%;
+          opacity: 1;
+        }
       }
     }
   }
 }
+
 .btn-filet {
   position: fixed;
   bottom: 0;
-  right: 0;
+
   background-color: #fff;
   border-radius: 5px;
   button {
@@ -124,5 +150,41 @@
     @include mq(300px) {
       font-size: 12px;
     }
+  }
+  @include mq(10000px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(1566px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(1200px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(992px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(786px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(576px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(450px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(350px) {
+    right: 60px;
+    z-index: 1000;
+  }
+  @include mq(250px) {
+    right: 60px;
+    z-index: 1000;
   }
 }

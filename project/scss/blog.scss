@@ -1,5 +1,8 @@
 @import "./mixin/mixin";
-
+// Global
+.section-right-parent{
+  background-image: url(../images/bg/long/7.jpg);
+}
 .page-blog {
   .header-wrapper {
     .slider-blog {

@@ -1,0 +1,216 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+html(lang="ar" dir="rtl" data-theme="light") 
+    //- html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title مدونتنا  
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 ar
+            // Bootstrap 5.0.1 ar
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.rtl.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.rtl.min.css")    
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+            link(rel="stylesheet" href="css/blog-ar.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header-ar.pug
+
+        main(class="page-blog") 
+            div(class="header-wrapper")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-md-8")
+                            div(class="slider-blog")
+                                h2(class="h1") مدونتنا
+                                h3(class="h5") 
+                                    span تميل جميع مولدات   على الإنترنت إلى تكرار قطع محددة مسبقا حسب الضرورة، مما يجعل هذا هو الأول الحقيقي
+                            div(class="hr")
+                            div(class="row")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 26 may 2019
+                                            li -
+                                            li 
+                                                a(href="#") مقابلات 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/1.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") aliquip بعناد
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة .. 
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 26 may 2020
+                                            li -
+                                            li 
+                                                a(href="#") هندسة معمارية  
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/2.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") ليس لديك شيء aliquip
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة .. 
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 28 may 2019
+                                            li -
+                                            li 
+                                                a(href="#") الجوائز 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/3.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") يضحك في
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة ..
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر 
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 29 may 2017
+                                            li -
+                                            li 
+                                                a(href="#") هندسة معمارية 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/4.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") الحق غير معروف مواجهته
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة ..
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 26 may 2016
+                                            li -
+                                            li 
+                                                a(href="#") مقابلات 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/1.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") لا الثنائي dico.
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة ..
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 26 may 2019
+                                            li -
+                                            li 
+                                                a(href="#") هندسة معمارية 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                iframe(src="http://player.vimeo.com/video/24506451?color=000000&title=0&badge=0", frameborder="0",  webkitallowfullscreen="", mozallowfullscreen="", allowfullscreen="", __idm_id__="66696193") 
+                                        div(class="blog-text")
+                                            h3(class="") البحر مع ألم
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.NETEGER IACULIS Region Nulla، Life Life ..
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 26 may 2019
+                                            li -
+                                            li 
+                                                a(href="#") هندسة معمارية 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/10.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") لا يوجد مؤلف
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة ..
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                                div(class="col-md-4 col-sm-6")
+                                    div(class="grid-item")
+                                        ul(class="grid-title") 
+                                            li 
+                                                a(href="#") 26 may 2019
+                                            li -
+                                            li 
+                                                a(href="#") مقابلات 
+                                        div(class="blog-media")
+                                            a(href="#") 
+                                                img(src="images/folio/thumbs/9.jpg" alt="")
+                                        div(class="blog-text")
+                                            h3(class="") Venenatis الحياة
+                                            p  تصنيع كرة القدم السريرية، Ullamcorper لا صلصة، وليس، كرة السلة والآن.Mauris Non Ligula Suscipit، بالاختصاصات، طبقة، زر البروتين.التتابع ولكن Sapien Dui.لا يوجد مؤلف لكثير من السلطة ليست بوابة.عدد صحيح IACULIS ZERO، الذي يمول حياة معقمة كبيرة ..
+                                            a(href="#" class="link-font") 
+                                                span اقرأ أكثر
+                                                i(class="fas fa-long-arrow-alt-left")
+                            div(class="hr")
+                            h2(class="h1 link-old-post")
+                                a(class="link-font" href="#")
+                                    span() المشاركات القديمة
+                                    i(class="fas fa-long-arrow-alt-left")
+                    //- End Row
+
+
+
+
+
+
+
+        //- +btnTow('read')
+        include footer/footer.pug
+
+
+
+
+        //- Start Global
+        include global/global-ar.pug
+        //- End Global
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        //- Jquery Tools
+        script(src="js/libs/countTo/jquery.countTo.js")
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="js/JQueryTools/JQueryTools.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

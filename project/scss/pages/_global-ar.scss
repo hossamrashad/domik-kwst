@@ -1,0 +1,351 @@
+// global for all pages
+// position
+
+$left: 0;
+$right: 0;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 750ms !important;
+  -webkit-transition: all 750ms !important;
+  -moz-transition: all 750ms !important;
+  -ms-transition: all 750ms !important;
+  -o-transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+body {
+  font: {
+    family: $font-cairo;
+    size: $font-page;
+  }
+  // min-height: 30000px
+}
+
+/* for selection */
+
+::-moz-selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+::selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+ul,
+ol {
+  // global ul + li style
+  @include reset-list;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  @include hover {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+// share
+.share {
+  position: fixed;
+  top: 0;
+  padding: 30px 25px;
+  z-index: 2000;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 1px;
+  color: #666;
+  cursor: pointer;
+  &:hover {
+    color: #666 !important;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: 80%;
+    border-left: 8px solid #ddd;
+    z-index: 1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 5%;
+    height: 0;
+    border-left: 8px solid #000;
+    z-index: 1;
+    transition: all 0.3s linear;
+  }
+  &:hover {
+    &::after {
+      height: 30px;
+    }
+  }
+  // start ar
+
+  @include mq(10566px) {
+    right: 2% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(1200px) {
+    right: 2% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(992px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(786px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(576px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(500px) {
+    right: 10% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(400px) {
+    right: 18% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px;
+      bottom: 20px;
+    }
+    &::before {
+      height: 30px !important;
+      bottom: 20px;
+    }
+  }
+  @include mq(300px) {
+    right: 18% !important;
+    top: -6px !important;
+    &::after {
+      height: 0px !important;
+    }
+    &::before {
+      height: 0px !important;
+    }
+  }
+  // end ar
+}
+
+li.share {
+  position: relative;
+}
+
+// Links
+.links {
+  position: fixed;
+  top: -50px;
+  right: 36%;
+  z-index: 20000;
+  height: 75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.5s linear;
+  span {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 15px 22px;
+    a {
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 1px;
+      color: #666;
+    }
+  }
+  @include sm-md-media {
+    width: calc(100% - 55%);
+  }
+  @include md-media {
+    width: calc(100% - 75%);
+  }
+}
+
+.active-share {
+  top: -5px;
+}
+
+.opacity0 {
+  opacity: 0 !important;
+}
+
+.link-font {
+  color: var(--text-color-1);
+  height: 20px;
+  display: inline-block;
+  span {
+    margin-right: 10px;
+    transition: all 0.3s linear;
+    height: 100%;
+    line-height: 100%;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: bold;
+  }
+  i {
+    margin-right: 10px;
+  }
+  @include hover {
+    span {
+      margin-left: 20px;
+      margin-right: 0px;
+    }
+  }
+}
+
+.section-left-parent {
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: $left;
+  background-image: url(../images/bg/long/2.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  @include mq(10000px) {
+    width: 35%;
+  }
+  @include mq(1566px) {
+    width: 35%;
+  }
+  @include mq(1200px) {
+    width: 35%;
+  }
+  @include mq(992px) {
+    width: 35%;
+  }
+  @include mq(786px) {
+    width: 35%;
+  }
+  @include mq(576px) {
+    display: none;
+  }
+  @include mq(450px) {
+    display: none;
+  }
+  @include mq(350px) {
+    display: none;
+  }
+  @include mq(250px) {
+    display: none;
+  }
+}
+// Animate
+.parent-bg-animate {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+
+  .bg-animate {
+    background-color: rgb(241, 241, 241);
+    opacity: 0.6;
+    position: fixed;
+    bottom: 10%;
+    right: 10%;
+    width: 60%;
+    height: 60%;
+    z-index: -2;
+    // opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    opacity: 0.1;
+    animation: loopCircle 30s linear 0s infinite normal;
+  }
+}
+@keyframes loopCircle {
+  0% {
+    transform: rotate3d(0, 0, 1, 0deg);
+    -webkit-transform: rotate3d(0, 0, 1, 0deg);
+  }
+  100% {
+    transform: rotate3d(0, 0, 1, 180deg);
+    -webkit-transform: rotate3d(0, 0, 1, 180deg);
+  }
+}
+.display-none {
+  display: none;
+  transition: all 0.3s linear;
+}

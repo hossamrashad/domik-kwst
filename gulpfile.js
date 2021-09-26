@@ -79,21 +79,21 @@ gulp.task("scss", function () {
     .pipe(notify("Scss Task Is Done"));
 });
 
-gulp.task("scss-style-rtl", function () {
+gulp.task("scss-style-ar", function () {
   return gulp
-    .src(["project/scss/style-rtl.scss"])
+    .src(["project/scss/style-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
     .pipe(sourcemaps.write("."))
     .pipe(gulp.dest("dist/css"))
     .pipe(livereload())
-    .pipe(notify("Scss Style Rtl Task Is Done"));
+    .pipe(notify("Scss Style Ar Task Is Done"));
 });
 
 gulp.task("scss-homepage", function () {
   return gulp
-    .src(["project/scss/homepage.scss"])
+    .src(["project/scss/homepage.scss", "project/scss/homepage-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -104,7 +104,7 @@ gulp.task("scss-homepage", function () {
 });
 gulp.task("scss-blog", function () {
   return gulp
-    .src(["project/scss/blog.scss"])
+    .src(["project/scss/blog.scss", "project/scss/blog-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -115,7 +115,7 @@ gulp.task("scss-blog", function () {
 });
 gulp.task("scss-about", function () {
   return gulp
-    .src(["project/scss/about.scss"])
+    .src(["project/scss/about.scss", "project/scss/about-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -126,7 +126,7 @@ gulp.task("scss-about", function () {
 });
 gulp.task("scss-category", function () {
   return gulp
-    .src(["project/scss/category.scss"])
+    .src(["project/scss/category.scss", "project/scss/category-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -137,7 +137,7 @@ gulp.task("scss-category", function () {
 });
 gulp.task("scss-contact", function () {
   return gulp
-    .src(["project/scss/contact.scss"])
+    .src(["project/scss/contact.scss", "project/scss/contact-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -148,7 +148,7 @@ gulp.task("scss-contact", function () {
 });
 gulp.task("scss-portfolio", function () {
   return gulp
-    .src(["project/scss/portfolio.scss"])
+    .src(["project/scss/portfolio.scss", "project/scss/portfolio-ar.scss"])
     .pipe(sourcemaps.init())
     .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
     .pipe(autoprefixer("last 20 versions"))
@@ -266,13 +266,31 @@ gulp.task("watch", function () {
   gulp.watch("project/pug/**/*.pug", gulp.series("html"));
   // = Css
   gulp.watch("project/scss/**/*.scss", gulp.series("scss"));
-  gulp.watch(["project/scss/style-rtl.scss"], gulp.series("scss-style-rtl"));
-  gulp.watch(["project/scss/homepage.scss"], gulp.series("scss-homepage"));
-  gulp.watch(["project/scss/blog.scss"], gulp.series("scss-blog"));
-  gulp.watch(["project/scss/about.scss"], gulp.series("scss-about"));
-  gulp.watch(["project/scss/category.scss"], gulp.series("scss-category"));
-  gulp.watch(["project/scss/contact.scss"], gulp.series("scss-contact"));
-  gulp.watch(["project/scss/portfolio.scss"], gulp.series("scss-portfolio"));
+  gulp.watch(["project/scss/style-ar.scss"], gulp.series("scss-style-ar"));
+  gulp.watch(
+    ["project/scss/homepage.scss", "project/scss/homepage-ar.scss"],
+    gulp.series("scss-homepage")
+  );
+  gulp.watch(
+    ["project/scss/blog.scss", "project/scss/blog-ar.scss"],
+    gulp.series("scss-blog")
+  );
+  gulp.watch(
+    ["project/scss/about.scss", "project/scss/about-ar.scss"],
+    gulp.series("scss-about")
+  );
+  gulp.watch(
+    ["project/scss/category.scss", "project/scss/category-ar.scss"],
+    gulp.series("scss-category")
+  );
+  gulp.watch(
+    ["project/scss/contact.scss", "project/scss/contact-ar.scss"],
+    gulp.series("scss-contact")
+  );
+  gulp.watch(
+    ["project/scss/portfolio.scss", "project/scss/portfolio-ar.scss"],
+    gulp.series("scss-portfolio")
+  );
   gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // = Javascript
   gulp.watch("project/libs-js/**/*", gulp.series("libs-js"));
