@@ -1,0 +1,97 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+html(lang="ar" dir="rtl" data-theme="light") 
+    //- html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title اتصل بنا
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+            link(rel="stylesheet" href="css/contact-ar.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header-ar.pug
+        div(class="container")
+            div(class="row")
+                div(class="col-md-8")
+                    div(class="header-title-disk-contact")
+                        h2(class="h1") هل ترغب في طلب مشروع؟
+                            br 
+                            | اتصل بنا
+                        p تميل جميع مولدات   على الإنترنت إلى تكرار قطع محددة مسبقا حسب الضرورة، مما يجعل هذا هو الأول الحقيقي.
+                    div(class="hr")
+                    //- Map
+                    div(class="map")
+                        iframe( src="https://www.google.com/maps/embed?pb=!…" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen) 
+                    div(class="title-input")        
+                        h3(class="h1") بيانات المتصل :
+                        h5 مكتب في نيويورك
+                        a(href="#")  27th Brooklyn New York, NY 10065
+                        a(href="#")  +7(111)123456789
+                        a(href="#")  yourmail@domain.com
+                        p(class="lead") تجدنا على:
+                        a(href="#") Facebook
+                        a(href="#") Twitter 
+                        a(href="#") Instagram
+                    div(class="contact-form mt-5 pt-5")
+                        form(action="") 
+                            div(class="mb-3")
+                                label(for="exampleInputEmail1" class="form-label")  اسم 
+                                input(type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp")
+                            div(class="mb-3")
+                                label(for="exampleInputEmail2" class="form-label")  عنوان البريد الإلكتروني
+                                input(type="text" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp")
+                            div(class="mb-3")
+                                label(for="exampleInputEmail3" class="form-label")  هاتف
+                                input(type="text" class="form-control" id="exampleInputEmail3" aria-describedby="emailHelp")
+                            div(class="form-floating mb-3")
+                                textarea(class="form-control" placeholder="Leave a comment here" id="floatingTextarea4" style="height: 200px")
+                                label(for="floatingTextarea4" style="right:0") تعليقات
+
+                            button(type="submit" id="submit" class="mt-3") 
+                                span يرسل 
+                                i(class="fas fa-long-arrow-alt-left fa-fw")
+                        div(class="hr")
+            include footer/footer.pug
+
+
+
+
+        //- Start Global
+        include global/global-ar.pug
+        //- End Global
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        //- Jquery Tools
+        script(src="js/libs/countTo/jquery.countTo.js")
+
+        script(src="js/libs/isotope/isotope-docs.min.js")
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="js/JQueryTools/JQueryTools.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body
