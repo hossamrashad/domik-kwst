@@ -1,0 +1,166 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+html(lang="ar" dir="rtl" data-theme="light") 
+    //- html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title مشروع واحد
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 ar
+            // Bootstrap 5.0.1 ar
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.rtl.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.rtl.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+            link(rel="stylesheet" href="css/project-single-ar.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header-ar.pug
+
+        main(class="page-project-single") 
+            div(class="header-wrapper")
+                div(class="container")
+                    div(class="row")
+                        div(class="col-md-8")
+                            div(class="slider-blog")
+                                h2(class="h1") مشروع بلاط المشروع
+                                h3(class="h5") 
+                                    span تميل جميع مولدات Lorem Ipsum على الإنترنت إلى تكرار قطع محددة مسبقا حسب الضرورة، مما يجعل هذا هو الأول الحقيقي
+                            //- div(class="hr")
+                        div(class="col-md-4 d-sm-none d-md-block")
+                    div(class="col-md-8 col-sm-12 mt-5")
+                        div(class="row")
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/1.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/1.jpg" alt="")
+
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/2.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/2.jpg" alt="")
+
+
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/3.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/3.jpg" alt="")
+
+                            div(class="col-md-8 col-sm-12 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/4.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/4.jpg" alt="")
+
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/5.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/5.jpg" alt="")
+
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/6.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/6.jpg" alt="")
+
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/7.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/7.jpg" alt="")
+
+                            div(class="col-md-4 col-sm-6 mb-4")
+                                div(class="child")
+                                    div(class="img")
+                                        a(href="images/folio/thumbs/8.jpg" class="jq-magnific-gallery") 
+                                            img(src="images/folio/thumbs/8.jpg" alt="")
+
+                            div(class='col-xs-12')
+                                div(class='disc-project-single')
+                                    h3(class="h2") lorem له، الجزر المعززة 
+                                    p(class='lead') Lorem الجزر المعزز، المطور المعدي.لذلك كنت تالفة من قبل أي مشكلة؟ألم في أي وقت، فهي ليست أبدا من كل شيء، معظم أكثر عمليات إعادة عملية السعادة هي الفاسدة أقل؟يعمل، مشاكل الحادث؟
+                                    p(class="lead") lorem الجزر جدا، مطور المعزز المعزز إلزامي.الذي سيسعى لرفض الرحلة 
+                                hr
+                                div(class='date-project-single')
+                                    ul 
+                                        li 
+                                            span(class="name") تاريخ:
+                                            span(class="value") 26.05.2021
+                                        li 
+                                            span(class="name") زبون:
+                                            span(class="value") House big
+                                        li 
+                                            span(class="name") الحالة:
+                                            span(class="value") completed
+                                        li 
+                                            span(class="name") موقعك:
+                                            span(class="value") kharkv ukaine
+                                div(class='hr')
+
+
+
+
+
+
+                        div(class="hr")
+                        div(class="content-nav")
+                            div(class="left")
+                                a(href="category-ar.html") 
+                                    i(class="fas fa-long-arrow-alt-right")
+                                a(href="#") /
+                                a(href="")
+                                    i(class="fas fa-long-arrow-alt-left") 
+                            div(class="right")
+                                a(href="portfolio-ar.html") 
+                                    i(class="fa fa-th-large")
+                    //- End Row
+
+
+
+
+
+
+
+
+
+        //- +btnTow('read')
+        include footer/footer.pug
+
+
+
+
+        //- Start Global
+        include global/global-ar.pug
+        //- End Global
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        //- Jquery Tools
+        script(src="js/libs/countTo/jquery.countTo.js")
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="js/JQueryTools/JQueryTools.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

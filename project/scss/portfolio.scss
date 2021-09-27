@@ -109,7 +109,7 @@
         opacity: 0;
         background-color: #fff;
         padding: 20px 0 10px 10px;
-        transition: all 0.3 linear;
+        transition: all 0.3s linear;
         h4 {
           a {
             color: #000;
@@ -123,7 +123,7 @@
           filter: brightness(0.4);
         }
         .text {
-          height: 50%;
+          height: 35%;
           opacity: 1;
         }
       }

@@ -92,4 +92,20 @@ $(document).ready(function () {
     }
     e.preventDefault();
   });
+
+  // magnific
+  $(".jq-magnific-image").magnificPopup({
+    type: "image",
+  });
+
+  $(".jq-magnific-gallery").magnificPopup({
+    type: "image",
+    gallery: {
+      enabled: true,
+    },
+  });
+
+  $(".jq-magnific-video").magnificPopup({
+    type: "iframe",
+  });
 });

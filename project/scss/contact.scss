@@ -4,7 +4,10 @@
   background-image: url(../images/bg/long/9.jpg);
 }
 
-
+.hr{
+  border-bottom: 10px solid #000;
+height: 10px;
+}
 .header-title-disk-contact{
   margin: 150px 0;
   @include mq(10000px) {
@@ -38,13 +41,13 @@
   }
 }
 .title-input {
-  border-bottom: 10px solid #000;
   padding-top: 100px;
   padding-bottom: 60px;
   a {
     display: block;
     color: #000;
   }
+  h5{font-weight: bolder;}
 }
 .contact-form {
   form {

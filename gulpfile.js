@@ -157,6 +157,31 @@ gulp.task("scss-portfolio", function () {
     .pipe(livereload())
     .pipe(notify("Scss portfolio Task Is Done"));
 });
+gulp.task("scss-project", function () {
+  return gulp
+    .src(["project/scss/project.scss", "project/scss/project-ar.scss"])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss project Task Is Done"));
+});
+gulp.task("scss-project-single", function () {
+  return gulp
+    .src([
+      "project/scss/project-single.scss",
+      "project/scss/project-single-ar.scss",
+    ])
+    .pipe(sourcemaps.init())
+    .pipe(sass({ outputStyle: "compressed" }).on("error", sass.logError))
+    .pipe(autoprefixer("last 20 versions"))
+    .pipe(sourcemaps.write("."))
+    .pipe(gulp.dest("dist/css"))
+    .pipe(livereload())
+    .pipe(notify("Scss project single Task Is Done"));
+});
 // ============================== Task Jquery ============================== //
 gulp.task("JQueryTools", function () {
   return gulp
@@ -290,6 +315,14 @@ gulp.task("watch", function () {
   gulp.watch(
     ["project/scss/portfolio.scss", "project/scss/portfolio-ar.scss"],
     gulp.series("scss-portfolio")
+  );
+  gulp.watch(
+    ["project/scss/project.scss", "project/scss/project-ar.scss"],
+    gulp.series("scss-project")
+  );
+  gulp.watch(
+    ["project/scss/project-single.scss", "project/scss/project-single-ar.scss"],
+    gulp.series("scss-project-single")
   );
   gulp.watch("project/libs-css/**/*", gulp.series("libs-css"));
   // = Javascript
