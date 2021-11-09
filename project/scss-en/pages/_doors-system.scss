@@ -125,3 +125,23 @@
     }
   }
 }
+
+.dot-before {
+  position: relative;
+  li {
+    position: relative;
+    display: block;
+    line-height: 1.9;
+    margin-#{$left}: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      #{$left}: -15px;
+      width: 10px;
+      height: 10px;
+      background-color: $main-color;
+      @include borderRadius(50%);
+    }
+  }
+}
