@@ -1,0 +1,140 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Roller Grilles
+
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+        div(class='container')
+            //- slide Doors System
+            //- div(id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel")
+            //-     div(class="carousel-inner")
+            //-         div( class="carousel-item active")
+            //-             img(src="http://placehold.it/1920x1080/333" class="d-block w-100" alt="alt")
+            //-             div(class='carousel-caption d-none d-md-block')
+            //-                 h5(class='display-5') Rolling Shutters
+            //-                 p(class='lead') "ThermoTeck" - Insulated, with micro profiled surface.
+            //-         div(class="carousel-item")
+            //-             img(src="http://placehold.it/1920x1080/333" class="d-block w-100" alt="alt")
+            //-             div(class='carousel-caption d-none d-md-block')
+            //-                 h5(class='display-5') Sectional Doors
+            //-                 p(class='lead') The ultimate solution for any business involved with production .
+            //-         div(class="carousel-item")
+            //-             img(src="http://placehold.it/1920x1080/333" class="d-block w-100" alt="alt")
+            //-             div(class='carousel-caption d-none d-md-block')
+            //-                 h5(class='display-5')  SMART RESET - Rapid roll-up door with self-repairing full curtain
+            //-                 p(class='lead') High performance and self-repairing Heavy duty automatic flexible door featuring a special and innovative self-repairing system; should the curtain accidentally get dislodged, it will automatically be recovered with a simple opening and closing operation.
+            //-         div(class="carousel-item")
+            //-             img(src="http://placehold.it/1920x1080/333" class="d-block w-100" alt="alt")
+            //-             div(class='carousel-caption d-none d-md-block')
+            //-                 h5(class='display-5')  Hospital Doors
+            //-                 p(class='lead') Automation for doors with seals, where the wing provides for partial seal (on 2 sides), with a specially designed guard.
+            //-         div(class="carousel-item")
+            //-             img(src="http://placehold.it/1920x1080/333" class="d-block w-100" alt="alt")
+            //-             div(class='carousel-caption d-none d-md-block')
+            //-                 h5(class='display-5')  Car Barriers
+            //-                 p(class='lead') Truly innovative shapes and uncompromising safety: these are the credentials of the new  Qik barrier.
+            //-         div(class="carousel-item")
+            //-             img(src="http://placehold.it/1920x1080/333" class="d-block w-100" alt="alt")
+            //-             div(class='carousel-caption d-none d-md-block')
+            //-                 h5(class='display-5') Overhead garage doors
+            //-                 p(class='lead') The modern solution for garage doors.
+            //-     button(class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev") 
+            //-         span(class="carousel-control-prev-icon" aria-hidden="true") 
+            //-         span( class="visually-hidden") Previous 
+            //-     button(class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next")
+            //-         span(class="carousel-control-next-icon" aria-hidden="true") 
+            //-         span(class="visually-hidden") next
+            //-     div(class="carousel-indicators")
+            //-         button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1")
+            //-         button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+            //-         button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")   
+            //-         button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4")  
+            //-         button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5")  
+            //-         button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6")  
+
+        div(class='container')
+            //- div(class='back-item-single-come-from' id='backVideo'
+            //- data-vide-bg="video/rolling-shutters/1.mp4")
+
+            div(class='back-item-single-come-from' id='backVideo'
+            data-vide-bg="https://hossamrashad.github.io/images-in-github/video/roller-grilles/1.mp4")
+
+                nav( aria-label="breadcrumb")
+                    ol( class="breadcrumb")
+                        li(class="breadcrumb-item")
+                            a(href="index.html") Home 
+                        li(class="breadcrumb-item")
+                            a(href="doors-system.html") Roll  Up Doors
+                        li(class="breadcrumb-item")
+                            a(href="rollupdoors-category.html") Roll Category
+                        li(class="breadcrumb-item active" aria-current="page") Rolling Shutters
+
+
+        div(class='container')
+            div(class='wrapper-item-single ')
+                div(class='row')
+                    div(class='col-md-12 mb-5')
+                        h4 Roller Grilles
+                        p(class='lead') A tailor-made door concept for economic solutions
+                        p(class='lead') Roller grilles in various designs made of steel, aluminum or stainless steel to ensure optimum ventilation, plenty of security and visibility.
+                        p(class='lead') Rolling grilles are used in those applications where high transparency, intrusion protection or ventilation is required.Principal field are shopping malls with big windows, garages and car parks, also keeps out leaves and debris. All Roller grilles are supplied with an automatic lifting device.
+                    div(class='col-sm-12 disc-img-single-item')
+                        div(class='grid-md-3')
+                            div(class='item-img mb-70')
+                                img(src="images/doors-system/roll-uup-doors/roller-grilles/roller-grilles-top.jpg" alt="" class='img-thumbnail')
+                            div(class='item-img mb-70')
+                                img(src="images/doors-system/roll-uup-doors/roller-grilles/roller-grilles-middle.jpg" alt="" class='img-thumbnail ')
+                            div(class='item-img' )
+                                img(src="images/doors-system/roll-uup-doors/roller-grilles/roller-grilles-bottom.jpg" alt="" class='img-thumbnail ')
+
+
+
+
+        include footer/footer.pug
+        include global/global.pug
+
+
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        // Back Video
+        script(src="js/libs/back-video/jquery.vide.js")
+
+
+        //- Jquery Tools
+        // Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

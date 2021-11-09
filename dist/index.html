@@ -13,24 +13,19 @@
     <meta name="keywords" content="Information of the Website">
     <meta name="author" content="Hossam Rashad">
     <!-- Favicon-->
-    <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
-    <link rel="apple-touch-icon" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="152x152" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="180x180" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon" sizes="167x167" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/index.html" type="image/x-icon">
-    <link rel="apple-touch-icon-precomposed" href="images/index.html" type="image/x-icon">
+    <link rel="shortcut icon" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="152x152" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="167x167" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/logo/logo.jpg" type="image/x-icon">
+    <link rel="apple-touch-icon-precomposed" href="images/logo/logo.jpg" type="image/x-icon">
     <!-- Animate-->
     <link rel="stylesheet" href="css/libs/animate/v-3.7.1/animate.min.css">
     <!-- font-awesome 5.15.3-->
     <link rel="stylesheet" href="css/libs/font-awesome/css/all.min.css">
-    <!-- Hover Hor Button-->
-    <!-- Magnific-->
-    <link rel="stylesheet" href="css/libs/magnific/magnific-popup.css">
-    <!-- Nivo Slider-->
-    <link rel="stylesheet" href="css/libs/nivo-slider/nivo-slider.css">
     <!-- Start Owl-->
     <link rel="stylesheet" href="css/libs/owl/owl.theme.default.min.css">
     <link rel="stylesheet" href="css/libs/owl/owl.carousel.min.css">
@@ -41,21 +36,19 @@
 <script src="https://hossamrashad.github.io/libraries/js/respond/respond.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 <![endif]-->
-    <!-- Modernizr-->
     <title>Home Page En</title>
     <!-- Bootstrap 5.0.1 en-->
     <link rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/homepage.css">
   </head>
   <body> 
     <nav class="navbar navbar-expand-lg navbar-light  fixed-top jq-navbar-change-color">
-      <div class="container"> <a class="navbar-brand" href="index.html"> <img src="images/logo.png" alt=""></a>
+      <div class="container"> <a class="navbar-brand" href="index.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Tooltip on top"> <img class="img-fluid" src="images/logo/logo.jpg" alt="African Trade &amp; contracting" title="African Trade &amp; contracting"></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav jq-scroll-to-element">
+          <ul class="navbar-nav css-li-border-bottom">
             <li class="nav-item" rel="one" data-text="Home"><a class="nav-link active" aria-current="page" href="index.html">Home</a></li>
-            <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+            <li class="nav-item"><a class="nav-link" href="doors-system.html">Doors System</a></li>
             <li class="nav-item"><a class="nav-link" href="about.html">About Us </a></li>
             <li class="nav-item"><a class="nav-link" href="contact.html">Contact </a></li>
             <li class="nav-item"><a class="nav-link" href="blog.html">Blog </a></li>
@@ -66,25 +59,29 @@
       </div>
     </nav><span class="share" href="#">Lang</span>
     <div class="links"><span><a href="index-ar.html">عربى</a></span><span><a href="index.html">English</a></span></div>
-    <div class="owl-carousel owl-theme">
-      <div class="item"><img src="images/bg/1.jpeg" alt=""><span> <a href="category.html">House</a></span></div>
-      <div class="item"><img src="images/bg/2.jpeg" alt=""><span> <a href="category.html">Industrial</a></span></div>
-      <div class="item"><img src="images/bg/3.jpeg" alt=""><span> <a href="category.html">interior</a></span></div>
-    </div><span class="d-none" id="portfolio-list"></span><span class="countTo-1920 d-none"></span>
+    <div class="container-fluid">
+      <div class="wrapper-owl-carousel">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><img src="images/home-page/doors-system-homePage.jpg" alt=""><span class="category"> <a href="doors-system.html">doors system</a></span></div>
+          <div class="item"><img src="images/home-page/loading-docks-homePage.jpg" alt=""><span class="category"> <a href="category.html">loading docks</a></span></div>
+          <div class="item"><img src="images/home-page/solar-energy-homePage.jpg" alt=""><span class="category"> <a href="category.html">solar energy </a></span></div>
+        </div>
+      </div>
+    </div>
+    <div class="section-right-parent"> 
+      <div class="section-right"></div>
+    </div>
+    <div class="call-whatsapp"><a href="https://wa.me/0201023345012" target="_blank">whatsapp<i class="fab fa-whatsapp fa-fw"></i></a></div>
     <!-- JQuery-->
     <script src="js/libs/JQuery/jquery-3-6-0.min.js"></script>
     <!-- bootstrap-->
     <script src="js/libs/bootstrap/bootstrap-5.0.1-min.js"></script>
+    <!-- owl-->
     <script src="js/libs/owl/jquery.mousewheel.min.js"></script>
     <script src="js/libs/owl/owl.carousel.min.js"></script>
-    <script src="js/libs/magnific/jquery.magnific-popup.js"></script>
-    <!-- Nivo slide-->
-    <script src="js/libs/nivo-slider/jquery.nivo.slider.pack.js"></script>
-    <script src="js/libs/nivo-slider/jquery.nivo.slider.js"></script>
-    <script src="js/libs/isotope/isotope-docs.min.js"></script>
+    <!-- countTo-->
     <script src="js/libs/countTo/jquery.countTo.js"></script>
     <script src="js/libs/plugin-work/plugin-work.js"></script>
-    <script src="js/JQueryTools/JQueryTools.js"></script>
     <script src="http://localhost:35729/livereload.js"></script>
   </body>
 </html>

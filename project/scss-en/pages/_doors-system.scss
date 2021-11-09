@@ -1,0 +1,127 @@
+// slide
+.slide {
+  height: 40vh;
+  .carousel-inner {
+    height: 100%;
+    .carousel-item {
+      height: 100%;
+      img {
+        height: 100%;
+      }
+      .carousel-caption {
+        h5 {
+        }
+        p {
+        }
+      }
+    }
+    .carousel-item.active {
+      img {
+      }
+      .carousel-caption {
+        h5 {
+        }
+        p {
+        }
+      }
+    }
+  }
+}
+
+.wrapper-doors-system-category {
+  margin: $main-margin 0;
+  div {
+    // @include grid(3);
+    .item-doors-system-category {
+      padding: 30px;
+      background-color: $color-fff;
+      position: relative;
+      overflow: hidden;
+      @include borderRadius(5px);
+      @include transitionAll(all, 0.5s, linear);
+      a {
+        color: $main-color;
+        height: 100%;
+        width: 100%;
+        display: block;
+        h3 {
+          text-align: center;
+          font-weight: bold;
+        }
+        img {
+          display: block;
+          margin: 30px auto;
+          width: 100%;
+          height: 200px;
+          @include transitionAll(all, 0.5s, linear);
+        }
+        h4 {
+          color: $main-color;
+        }
+        h5 {
+          color: $color-000;
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        bottom: 10px;
+        #{$right}: 0px;
+        width: 0px;
+        height: 10px;
+        background-color: $main-color;
+        @include transitionAll(all, 0.5s, linear);
+      }
+      &:hover {
+        @include boxShadow(-1px, 0px, 10px, $color-000);
+        img {
+          @include scale(1.1, 1.1);
+        }
+        &::after {
+          width: 150px;
+        }
+      }
+    }
+  }
+}
+
+.back-item-single-come-from {
+  margin-top: 40px;
+  height: 50vh;
+  nav {
+    height: 100%;
+    @include flexCenter;
+    align-items: flex-end;
+    ol {
+      li {
+        a {
+          font-size: 1vw;
+          color: $color-fff;
+        }
+      }
+      li.active {
+        color: $main-color;
+        font-weight: bold;
+        font-size: 1vw;
+      }
+    }
+  }
+}
+
+// wrapper-item-single
+.wrapper-item-single {
+  padding: 100px 0;
+  h4 {
+    font-weight: bold;
+    color: $main-color;
+  }
+  .disc-img-single-item {
+    img {
+      min-width: 250px;
+      width: 300px;
+      height: 250px;
+      display: block;
+      margin: auto;
+    }
+  }
+}

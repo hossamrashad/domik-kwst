@@ -1,33 +1,4 @@
 $(document).ready(function () {
-  // nivo slide
-  $(".slider-active").nivoSlider({
-    // points
-    controlNav: true,
-    // angle left & right
-    directionNav: true,
-    randomStart: true,
-    controlNavThumbs: false,
-    animSpeed: 500,
-    pauseTime: 5000,
-    pauseOnHover: false,
-    manualAdvance: false,
-    prevText: '<i class="fas fa-long-arrow-alt-left"></i>',
-    nextText: '<i class="fas fa-long-arrow-alt-right"></i>',
-    slices: 15,
-    boxCols: 8,
-    boxRows: 4,
-
-    // effect: "random",
-
-    // startSlide: 0,
-
-    // beforeChange: function () {},
-    // afterChange: function () {},
-    // slideshowEnd: function () {},
-    // lastSlide: function () {},
-    // afterLoad: function () {},
-  });
-
   // countTo
   $(".countTo-1920").countTo({
     from: 50,
@@ -35,7 +6,6 @@ $(document).ready(function () {
     speed: 3000,
     refreshInterval: 50,
   });
-
   $(".countTo-3450").countTo({
     from: 50,
     to: 3450,
@@ -49,23 +19,16 @@ $(document).ready(function () {
     refreshInterval: 50,
   });
 
-  // init Isotope
-  var $grid = $("#portfolio-list").isotope({
-    // options
-  });
   // filter items on button click
   $(".filter-button-group").on("click", "button", function () {
     var filterValue = $(this).attr("data-filter");
     $grid.isotope({ filter: filterValue });
   });
 
-  // gmaps
-  // var map = new GMaps({ el: ".jq-map", lat: 30.039977, lng: 31.219695 });
-
   // owl
   $(".owl-carousel").owlCarousel({
     loop: true,
-    margin: 0,
+    margin: 20,
     nav: true,
     dots: false,
     autoplay: true,
@@ -82,7 +45,6 @@ $(document).ready(function () {
       },
     },
   });
-
   // mousewheel owl-carousel
   $(".owl-carousel").on("mousewheel", ".owl-stage", function (e) {
     if (e.deltaY > 0) {
@@ -92,20 +54,7 @@ $(document).ready(function () {
     }
     e.preventDefault();
   });
-
-  // magnific
-  $(".jq-magnific-image").magnificPopup({
-    type: "image",
-  });
-
-  $(".jq-magnific-gallery").magnificPopup({
-    type: "image",
-    gallery: {
-      enabled: true,
-    },
-  });
-
-  $(".jq-magnific-video").magnificPopup({
-    type: "iframe",
-  });
 });
+
+//
+$("#backVideo").vide("video/rolling-shutters/1.mp4");

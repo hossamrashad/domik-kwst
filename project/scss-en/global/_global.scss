@@ -1,0 +1,139 @@
+@import "../mixin/mixin";
+// global
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  @include prefix(box-sizing, border-box, webkit moz o ms);
+}
+
+// global for all pages
+
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+  transition: all 750ms !important;
+  -webkit-transition: all 750ms !important;
+  -moz-transition: all 750ms !important;
+  -ms-transition: all 750ms !important;
+  -o-transition: all 750ms !important;
+  transition-delay: 0 !important;
+}
+
+body {
+  font: {
+    family: $font-cairo;
+    size: $font-page;
+  }
+  position: relative;
+  background-color: $color-eee;
+
+  &::after {
+    content: "";
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/back-animation/body-bg.png);
+    background-attachment: fixed;
+    background-position: 60% 50%;
+    background-repeat: no-repeat;
+    animation-name: spin;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    z-index: -1;
+  }
+}
+@include KeyFrame(spin) {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    // @include rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+p,
+div,
+a,
+li {
+  font-size: 1rem;
+}
+
+/* for selection */
+
+::-moz-selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+::selection {
+  color: #fff;
+  background-color: $main-color;
+}
+
+ul,
+ol {
+  // global ul + li style
+  @include reset-list;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+  @include hover {
+    text-decoration: none;
+    outline: none;
+    color: inherit;
+  }
+  &:focus {
+    text-decoration: none;
+    outline: none;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+// Whats App
+
+.call-whatsapp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background: $color-333;
+  height: 60px;
+  width: 200px;
+  z-index: 3000;
+  padding: 10px 30px;
+  @include borderRadius(5px);
+
+  a {
+    color: $color-fff;
+    text-align: center;
+    font-size: 25px;
+    text-transform: capitalize;
+    word-spacing: 8px;
+    @include flexCenter;
+    @include transitionAll(all, 0.5s, linear);
+
+    i {
+      // color: $color-fff;
+      padding-#{$left}: 30px;
+      padding-#{$right}: 30px;
+      @include transitionAll(all, 0.5s, linear);
+    }
+    @include hover {
+      color: $color-fff;
+      i {
+        padding-#{$left}: 20px;
+        padding-#{$right}: 30px;
+      }
+    }
+  }
+}

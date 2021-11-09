@@ -1,0 +1,228 @@
+// wrapper-owl-carousel
+.wrapper-owl-carousel {
+  position: relative;
+  display: block;
+  height: calc(100vh);
+  // container plugin class = owl-carousel
+  .owl-carousel {
+    height: 100%;
+    // inside plugin
+    .owl-stage-outer {
+      height: 100%;
+      // for wol dir ltr
+      direction: ltr !important;
+      // inside plugin
+      .owl-stage {
+        height: 100%;
+        // inside plugin
+        .owl-item {
+          height: 100%;
+          // my item
+          .item {
+            height: 100%;
+            overflow: hidden;
+
+            img {
+              height: 100%;
+              @include transitionAll(all, 0.5s, linear);
+            }
+            // span
+            .category {
+              width: 100%;
+              height: 100%;
+              @include overlay;
+              @include transitionAll(all, 0.5s, linear);
+
+              a {
+                @include positionCenter;
+                font-size: 5vw;
+                color: $color-fff;
+                text-transform: capitalize;
+                font-weight: bold;
+                text-align: center;
+                width: 100%;
+              }
+            }
+            &:hover {
+              img {
+                @include scale(1.3, 1.3);
+              }
+              .category {
+                background-color: rgba(102, 102, 102, 0.692);
+              }
+            }
+          }
+        }
+      }
+    }
+    // inside plugin Div button arrow
+    .owl-nav {
+      // button prev
+      .owl-prev {
+        span {
+        }
+      }
+      // button next
+      .owl-next {
+        span {
+        }
+      }
+      /* Extra small devices (phones, 600px and down) */
+      @media only screen and (max-width: 767px) {
+        margin-top: 30px;
+        @include grid(2);
+        .owl-prev,
+        .owl-next {
+          span {
+            font-size: 20px;
+            padding: 6px 30px;
+            background-color: $color-fff;
+            color: $color-000;
+            @include borderRadius(5px);
+          }
+        }
+        // Button owl-prev
+        .owl-prev {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{right}: 50%;
+          }
+        }
+        // Button owl-next
+        .owl-next {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{left}: 50%;
+          }
+        }
+      }
+
+      /* Medium devices (landscape tablets, 768px and up) */
+      @media only screen and (min-width: 768px) {
+        display: inline-block;
+        .owl-prev,
+        .owl-next {
+          text-align: center;
+          span {
+            font-size: 40px;
+            padding: 1px 30px;
+            background-color: $color-fff;
+            color: $color-000;
+            @include flexCenter;
+            @include borderRadius(5px);
+          }
+        }
+        // Button owl-prev
+        .owl-prev {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{right}: 50%;
+          }
+        }
+        // Button owl-next
+        .owl-next {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{left}: 50%;
+          }
+        }
+      }
+
+      /* Large devices (laptops/desktops, 992px and up) */
+      @media only screen and (min-width: 992px) {
+        // Button owl-prev
+        .owl-prev {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{right}: 50%;
+          }
+        }
+        // Button owl-next
+        .owl-next {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{left}: 50%;
+          }
+        }
+      }
+
+      /* Extra large devices (large laptops and desktops, 1200px and up) */
+      @media only screen and (min-width: 1280px) {
+        // Button owl-prev
+        .owl-prev {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{right}: 50%;
+          }
+        }
+        // Button owl-next
+        .owl-next {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{left}: 50%;
+          }
+        }
+      }
+
+      /* Extra large devices (large desktops, 1440px and up) */
+      @media only screen and (min-width: 1440px) {
+        // Button owl-prev
+        .owl-prev {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{right}: 50%;
+          }
+        }
+        // Button owl-next
+        .owl-next {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{left}: 50%;
+          }
+        }
+      }
+
+      /* Extra large devices (large desktops, 1566px and up) */
+      @media only screen and (min-width: 1566px) {
+        // Button owl-prev
+        .owl-prev {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{right}: 50%;
+          }
+        }
+        // Button owl-next
+        .owl-next {
+          // span
+          span {
+            position: absolute;
+            bottom: 5%;
+            #{left}: 50%;
+          }
+        }
+      }
+    }
+  }
+}
