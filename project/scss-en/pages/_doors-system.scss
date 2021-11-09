@@ -1,3 +1,24 @@
+// global
+.dot-before {
+  position: relative;
+  li {
+    position: relative;
+    display: block;
+    line-height: 1.9;
+    margin-#{$left}: 15px;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 8px;
+      #{$left}: -15px;
+      width: 10px;
+      height: 10px;
+      background-color: $main-color;
+      @include borderRadius(50%);
+    }
+  }
+}
+
 // slide
 .slide {
   height: 40vh;
@@ -93,10 +114,17 @@
     @include flexCenter;
     align-items: flex-end;
     ol {
+      border: 5px solid $main-color;
+      padding: 10px 20px;
+      @include borderRadius(5px);
+
       li {
         a {
           font-size: 1vw;
           color: $color-fff;
+          &:hover {
+            color: $color-fff;
+          }
         }
       }
       li.active {
@@ -122,26 +150,6 @@
       height: 250px;
       display: block;
       margin: auto;
-    }
-  }
-}
-
-.dot-before {
-  position: relative;
-  li {
-    position: relative;
-    display: block;
-    line-height: 1.9;
-    margin-#{$left}: 15px;
-    &::before {
-      content: "";
-      position: absolute;
-      top: 8px;
-      #{$left}: -15px;
-      width: 10px;
-      height: 10px;
-      background-color: $main-color;
-      @include borderRadius(50%);
     }
   }
 }
