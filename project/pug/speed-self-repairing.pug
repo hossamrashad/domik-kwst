@@ -1,0 +1,121 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Speed Self Repairing
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+
+
+        div(class='container')
+
+
+            div(class='back-item-single-come-from' id='backVideo'
+            data-vide-bg="https://hossamrashad.github.io/images-in-github/video/speed-self-repairing/1.mp4")
+
+                nav( aria-label="breadcrumb")
+                    ol( class="breadcrumb")
+                        li(class="breadcrumb-item")
+                            a(href="index.html") Home 
+                        li(class="breadcrumb-item")
+                            a(href="doors-system.html") Roll  Up Doors
+                        li(class="breadcrumb-item")
+                            a(href="sectional-category.html") Speed Doors
+                        li(class="breadcrumb-item active" aria-current="page") Speed Self Repairing
+
+
+        div(class='container')
+            div(class='wrapper-item-single ')
+                div(class='row')
+                    div(class='col-md-12 mb-5')
+                        h4 SMART RESET - Rapid roll-up door with self-repairing full curtain
+                        p(class='lead') High performance and self-repairing Heavy duty automatic flexible door featuring a special and innovative self-repairing system; should the curtain accidentally get dislodged, it will automatically be recovered with a simple opening and closing operation.
+
+                        h4(class='h5')  Technical features of the product range
+
+
+                        ul(class='dot-before') 
+                            li Smart Reset can be supplied in different levels of design, to better satisfy the differing operating requirements and to comply with the different local standards.
+
+                            li The wide range offered features a whole array of unparalleled technological features.
+
+                            li Hot-galvanized steel available in the RAL versions with oven-baked epoxy coating with smooth finish or fine satin- finish AISI 304 stainless steel, complete with galvanised curtain winding pipe and with vertical uprights fitted with special self-lubricating sliding guide installed on a shock absorbing spring system
+
+
+                            li Provision for roll-up roller casing
+
+                            li DSC electronic safety device to reverse motion when door is closing if an obstacle is hit
+
+                            li Heavy duty motor: 3 phase 400 V motor, complete with limit switch and electrically operated hand brake
+
+                            li IP55 rated electronic panel, complete with open-close stop membrane push-button panel with Auto test function, in compliance with European Directives 2006/42/CE and 89/106/CE
+
+                            li Provision for manual opening device with operation crank
+
+                            li INVERTER system on request for different speed, accelerations and braking control
+
+                            li Full size flexible curtain entirely made of Class 2 self extinguishing polyester, with no horizontal strengthening parts, which slides inside the side hinges and features self-repairing properties and high resistance to air and wind pressure to 120 km/h.
+
+
+
+
+
+                    div(class='col-md-12 disc-img-single-item')
+                        div(class='grid-sm-3')
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/self-repairing/self-repairing-top.jpg" alt="" class='img-thumbnail')
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/self-repairing/self-repairing-middle.jpg" alt="" class='img-thumbnail')
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/self-repairing/self-repairing-bottom.jpg" alt="" class='img-thumbnail')
+
+
+
+
+
+        include footer/footer.pug
+        include global/global.pug
+
+
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+        // Back Video
+        script(src="js/libs/back-video/jquery.vide.js")
+
+
+        //- Jquery Tools
+        // Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

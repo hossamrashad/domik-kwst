@@ -1,0 +1,124 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Speed Counterweights
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+
+
+        div(class='container')
+
+
+            div(class='back-item-single-come-from' id='backVideo'
+            data-vide-bg="https://hossamrashad.github.io/images-in-github/video/speed-external-motor/1.mp4")
+
+                nav( aria-label="breadcrumb")
+                    ol( class="breadcrumb")
+                        li(class="breadcrumb-item")
+                            a(href="index.html") Home 
+                        li(class="breadcrumb-item")
+                            a(href="doors-system.html") Roll  Up Doors
+                        li(class="breadcrumb-item")
+                            a(href="sectional-category.html") Speed Doors
+                        li(class="breadcrumb-item active" aria-current="page") Speed Counterweights
+
+
+        div(class='container')
+            div(class='wrapper-item-single ')
+                div(class='row')
+                    div(class='col-md-12 mb-5')
+                        h4 SECTOR - Rapid roll-up, full curtain and counterweights
+
+
+
+                        p(class='lead') A fully featured and practical solution.When handling vehicles require frequent crossings, heavy duty, compact size rapid doors are required.
+
+
+                        p(class='lead') Sector rapid roll-up doors not only meet these requirements, but also feature a fully coated frame housing the motor, the control and safety devices and the balancing systems.
+
+
+                        p(class='lead') In addition to being good value for money, Sector doors also boast a high level of flexibility, ensured by the structure and by the availability of several designs.
+
+
+
+
+
+
+
+                        h4(class='h5')  Technical features of the product range
+
+
+
+
+
+                        ul(class='dot-before') 
+                            li Compact hot galvanised steel or fine satin finish AISI 304 stainless steel structure
+
+                            li Reduced size structure, specially in height
+
+                            li The self supporting casing, fitted on suitable vertical uprights, makes door installation easy and houses and protects all moving parts
+
+                            li The optional automatic antipanic device allows, in the event of a power cut, the curtain to be reopened by using the counterweights
+
+                            li Reliable modular counterweighted balancing system
+
+                            li IP55 rated electronic panel complete with pushbutton panel with open-close-stop membrane control featuring anautotest function, compliant with European Directives 2006/42/EC and 89/106/EC. TÜV certified
+
+                            li Emergency release system
+
+                            li Polarised quick wiring
+
+                            li 3-phase motor for heavy duty operation and different speeds, accelerations and braking control system
+
+                            li Complete range of bottom edges to be connected to the curtain by means of a special extruded anodised aluminium universal profile complete with ACS side runners – Anti crash System: passive edge, electromechanical sensitive edge and SOF self testing safety rib.
+
+
+
+
+
+                    div(class='col-md-12 disc-img-single-item')
+                        div(class='grid-sm-2')
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/counterweights/counterweights-top.jpg" alt="" class='img-thumbnail')
+
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/counterweights/counterweights-bottom.jpg" alt="" class='img-thumbnail')
+
+
+
+        include footer/footer.pug
+        include global/global.pug
+
+        include script/script.pug
+        // Back Video
+        script(src="js/libs/back-video/jquery.vide.js")
+
+        //- Jquery Tools
+        // Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

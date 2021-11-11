@@ -1,0 +1,124 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Speed Counterweighted Model
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+
+
+        div(class='container')
+
+
+            div(class='back-item-single-come-from' id='backVideo'
+            data-vide-bg="https://hossamrashad.github.io/images-in-github/video/speed-Counterweights/1.mp4")
+
+                nav( aria-label="breadcrumb")
+                    ol( class="breadcrumb")
+                        li(class="breadcrumb-item")
+                            a(href="index.html") Home 
+                        li(class="breadcrumb-item")
+                            a(href="doors-system.html") Roll  Up Doors
+                        li(class="breadcrumb-item")
+                            a(href="speed-category.html") Speed Doors
+                        li(class="breadcrumb-item active" aria-current="page") Speed Counterweighted Model
+
+
+        div(class='container')
+            div(class='wrapper-item-single ')
+                div(class='row')
+                    div(class='col-md-12 mb-5')
+                        h4 FLASH - Rapid roll-up with full curtain, counterweighted model
+
+
+
+
+                        p(class='lead') All areas requiring high levels of cleanliness and tightness often need high-speed doors which, in addition to giving a very striking image, are able to operate at the highest efficiency and safety levels.
+
+
+
+                        p(class='lead') The range of these doors is the best available as it boasts all the features developed from  long experience in meeting the most diverse production requirements.
+
+
+
+
+
+
+
+
+
+                        h4(class='h5')  Technical features of the product range
+
+
+
+
+
+
+
+                        ul(class='dot-before') 
+                            li FLASH CS doors, featuring the unique “built-in” professional system, are the ideal solution as, in addition to relying on technologically advanced motion techniques, they use self-extinguishing polyester curtains complete with window section or see-through PCV curtains (with red central warning strip) and metal frames without overhangs, giving the automation a sophisticated design.
+
+                            li Built-in structure
+
+                            li Linear metal profiles
+
+                            li IP55 rated electronic panel complete with pushbutton panel with open-close-stop membrane control featuring an auto test function, compliant with European Directives 2006/42/EC and 89/106/EC. TÜV certified
+
+                            li Infrared photocells built in the uprights
+
+                            li Dual speed, 3-phase motor
+
+                            li Polarised quick wiring
+
+                            li Provision for an emergency reopening semiautomatic device.
+
+
+
+
+
+
+                    div(class='col-md-12 disc-img-single-item')
+                        div(class='grid-sm-2')
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/counterweighted-model/counterweighted-model-top.jpg" alt="" class='img-thumbnail')
+
+                            div(class='item-img')
+                                img(src="images/doors-system/speed-doors/counterweighted-model/counterweighted-model-bottom.jpg" alt="" class='img-thumbnail')
+
+
+
+        include footer/footer.pug
+        include global/global.pug
+
+        include script/script.pug
+        // Back Video
+        script(src="js/libs/back-video/jquery.vide.js")
+
+        //- Jquery Tools
+        // Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body
