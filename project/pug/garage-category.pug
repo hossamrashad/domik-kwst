@@ -1,0 +1,107 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Garage Doors Category
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+        div(class='container')
+            //- slide Doors System
+            div(id="carouselExampleControls" class="carousel slide " data-bs-ride="carousel")
+                div(class="carousel-inner")
+                    div( class="carousel-item active")
+                        img(src="https://hossamrashad.github.io/images-in-github/images/placehold/1920x1080.png" class="d-block w-100" alt="alt")
+                        div(class='carousel-caption d-none d-md-block')
+                            h5(class='display-5') Rolling Shutters
+                            p(class='lead') "ThermoTeck" - Insulated, with micro profiled surface.
+                    div(class="carousel-item")
+                        img(src="https://hossamrashad.github.io/images-in-github/images/placehold/1920x1080.png" class="d-block w-100" alt="alt")
+                        div(class='carousel-caption d-none d-md-block')
+                            h5(class='display-5') Sectional Doors
+                            p(class='lead') The ultimate solution for any business involved with production .
+                    div(class="carousel-item")
+                        img(src="https://hossamrashad.github.io/images-in-github/images/placehold/1920x1080.png" class="d-block w-100" alt="alt")
+                        div(class='carousel-caption d-none d-md-block')
+                            h5(class='display-5')  SMART RESET - Rapid roll-up door with self-repairing full curtain
+                            p(class='lead') High performance and self-repairing Heavy duty automatic flexible door featuring a special and innovative self-repairing system; should the curtain accidentally get dislodged, it will automatically be recovered with a simple opening and closing operation.
+                    div(class="carousel-item")
+                        img(src="https://hossamrashad.github.io/images-in-github/images/placehold/1920x1080.png" class="d-block w-100" alt="alt")
+                        div(class='carousel-caption d-none d-md-block')
+                            h5(class='display-5')  Hospital Doors
+                            p(class='lead') Automation for doors with seals, where the wing provides for partial seal (on 2 sides), with a specially designed guard.
+                    div(class="carousel-item")
+                        img(src="https://hossamrashad.github.io/images-in-github/images/placehold/1920x1080.png" class="d-block w-100" alt="alt")
+                        div(class='carousel-caption d-none d-md-block')
+                            h5(class='display-5')  Car Barriers
+                            p(class='lead') Truly innovative shapes and uncompromising safety: these are the credentials of the new  Qik barrier.
+                    div(class="carousel-item")
+                        img(src="https://hossamrashad.github.io/images-in-github/images/placehold/1920x1080.png" class="d-block w-100" alt="alt")
+                        div(class='carousel-caption d-none d-md-block')
+                            h5(class='display-5') Overhead garage doors
+                            p(class='lead') The modern solution for garage doors.
+                button(class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev") 
+                    span(class="carousel-control-prev-icon" aria-hidden="true") 
+                    span( class="visually-hidden") Previous 
+                button(class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next")
+                    span(class="carousel-control-next-icon" aria-hidden="true") 
+                    span(class="visually-hidden") next
+                div(class="carousel-indicators")
+                    button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1")
+                    button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2")
+                    button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3")   
+                    button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4")  
+                    button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5")  
+                    button(type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6")  
+
+            div(class='wrapper-doors-system-category')
+                div(class='grid-md-4 grid-sm-1 gap-5')
+                    div(class='item-doors-system-category')
+                        a(href="garage-overHead-Garage-item.html") 
+                            h3(class='text-uppercase h6') Overhead garage doors
+                            img(src="images/doors-system/overhead-garage-doors/overhead-garage-doors-top.jpg" alt="" class='img-fluid img-thumbnail')
+                            h5(class='text-capitalize') The modern solution for garage doors....
+
+
+
+        include footer/footer.pug
+        include global/global.pug
+
+
+
+
+
+
+
+
+
+
+
+        include script/script.pug
+
+        //- Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body

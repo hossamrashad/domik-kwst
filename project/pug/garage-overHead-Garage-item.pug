@@ -1,0 +1,128 @@
+include variables/variables.pug
+include mixin/mixin.pug
+doctype 
+//- html(lang="ar" dir="rtl" data-theme="light") 
+html(lang="en" data-theme="light")
+    //- html(lang='ar' dir="rtl") 
+
+    head 
+        //- start head  
+        include head/head.pug
+
+        block pageTitle
+            title Overhead Garage Doors
+
+
+        block Bootstrap
+            //- Bootstrap 5.0.1 en
+            // Bootstrap 5.0.1 en
+            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+
+        //- global framework
+        block Framework
+            link(rel="stylesheet" href="css/style.css")
+    //- end head
+
+    body 
+        //- start body
+        include header/header.pug
+
+
+
+        div(class='container')
+
+
+            div(class='back-item-single-come-from' id='backVideo'
+            data-vide-bg="https://hossamrashad.github.io/images-in-github/video/speed-Counterweights/1.mp4")
+
+                nav( aria-label="breadcrumb")
+                    ol( class="breadcrumb")
+                        li(class="breadcrumb-item")
+                            a(href="index.html") Home 
+                        li(class="breadcrumb-item")
+                            a(href="doors-system.html") Roll  Up Doors
+                        li(class="breadcrumb-item")
+                            a(href="garage-category.html") Garage Category
+                        li(class="breadcrumb-item active" aria-current="page") Overhead Garage Doors
+
+
+
+
+        div(class='container')
+            div(class='wrapper-item-single ')
+                div(class='row')
+                    div(class='col-md-12 mb-5')
+
+                        h4 Overhead garage doors
+
+                        ul(class='dot-before mb-5')
+
+                            li  The modern solution for garage doors.
+
+
+
+                            li  make life easier meet safety requirements
+
+
+
+
+                            li  They replace traditional garage doors and offer a variety of practical and surprising advantages.
+
+
+                        h4(class='h5') Technical features of the product range
+
+
+
+                        ul(class='dot-before mb-5')
+
+                            li  Easy and functional opening and closing
+
+
+                            li  With original  motorisation, all you have to do to silently open and close your garage is lightly touch the remote control.
+
+
+                            li  Extreme conditions do not represent a problem: ice and snow are not obstacles for  overhead doors.
+
+
+                            li residential overhead doors are sturdy and fully weather resistant.
+
+                            li They provide excellent insulation against heat and sound thanks to the insulated panels (steel or wood).
+
+                            li They improve live ability and inside conditions and also cut energy costs.
+
+                            li For new and renovated buildings residential doors are practical and flexible; they enhance new buildings and also allow quickly and accurately replacing old traditional doors.
+
+                            li Accessory control and safety provides a wide range of accessories: from ergonomic handles to command, control and security systems.
+
+                            li All  original accessories have been designed to enhance the door, ensure long-term reliability and safe operations.
+
+                            li Overhead doors enhance the building and meet any requirement
+
+                            li The design and various solutions presented, with versions in steel and wood, allow perfect aesthetic integration in any architectural context, both classic, rustic or modern
+
+
+
+                    div(class='col-md-12 disc-img-single-item')
+                        div(class='grid-sm-3')
+                            div(class='item-img')
+                                img(src="images/doors-system/overhead-garage-doors/overhead-garage-doors-top.jpg" alt="" class='img-thumbnail')
+                            div(class='item-img')
+                                img(src="images/doors-system/overhead-garage-doors/overhead-garage-doors-middel.jpg" alt="" class='img-thumbnail')
+                            div(class='item-img')
+                                img(src="images/doors-system/overhead-garage-doors/overhead-garage-doors-bottom.jpg" alt="" class='img-thumbnail')
+
+
+        include footer/footer.pug
+        include global/global.pug
+
+        include script/script.pug
+        // Back Video
+        script(src="js/libs/back-video/jquery.vide.js")
+
+        //- Jquery Tools
+        // Jquery Tools
+        script(src="js/libs/plugin-work/plugin-work.js")
+        script(src="http://localhost:35729/livereload.js")
+
+        //- end body
