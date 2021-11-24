@@ -107,8 +107,8 @@ img {
   bottom: 20px;
   right: 20px;
   background: $color-333;
-  height: 60px;
-  width: 200px;
+  height: 45px;
+  width: 50px;
   z-index: 3000;
   padding: 10px 30px;
   @include borderRadius(5px);
@@ -126,16 +126,16 @@ img {
       // color: $color-fff;
       // color: $color-fff;
       // color: $color-fff;
-      padding-#{$left}: 30px;
-      padding-#{$right}: 30px;
+      // padding-#{$left}: 30px;
+      // padding-#{$right}: 30px;
       @include transitionAll(all, 0.5s, linear);
       color: #25d366;
     }
     @include hover {
       color: $color-fff;
       i {
-        padding-#{$left}: 20px;
-        padding-#{$right}: 30px;
+        // padding-#{$left}: 20px;
+        // padding-#{$right}: 30px;
       }
     }
   }
