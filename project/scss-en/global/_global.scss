@@ -124,6 +124,7 @@ img {
 
     i {
       // color: $color-fff;
+      // color: $color-fff;
       padding-#{$left}: 30px;
       padding-#{$right}: 30px;
       @include transitionAll(all, 0.5s, linear);
