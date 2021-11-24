@@ -128,7 +128,7 @@ img {
       padding-#{$left}: 30px;
       padding-#{$right}: 30px;
       @include transitionAll(all, 0.5s, linear);
-      color: #080;
+      color: #25d366;
     }
     @include hover {
       color: $color-fff;
