@@ -3,60 +3,60 @@ include mixin/mixin.pug
 doctype 
 //- html(lang="ar" dir="rtl" data-theme="light") 
 html(lang="en" data-theme="light")
-    //- html(lang='ar' dir="rtl") 
+  //- html(lang='ar' dir="rtl") 
 
-    head 
-        //- start head  
-        include head/head.pug
+  head 
+    //- start head  
+    include head/head.pug
 
-        block pageTitle
-            title Home Page En
+    block pageTitle
+      title Home Page En
 
-        block Bootstrap
-            //- Bootstrap 5.0.1 en
-            // Bootstrap 5.0.1 en
-            //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
-            link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
+    block Bootstrap
+      //- Bootstrap 5.0.1 en
+      // Bootstrap 5.0.1 en
+      //- link(rel="stylesheet" href="https://hossamrashad.github.io/libraries/css/bootstrap/bootstrap.min.css")
+      link(rel="stylesheet" href="css/libs/bootstrap/bootstrap.min.css")       
 
-        //- global framework
-        block Framework
-            link(rel="stylesheet" href="css/style.css")
-    //- end head
+    //- global framework
+    block Framework
+      link(rel="stylesheet" href="css/style.css")
+  //- end head
 
-    body 
-        //- start body
-        include header/header.pug
+  body 
+    //- start body
+    include header/header.pug
 
-        div(class='container-fluid')
-            //- slider
-            div(class='wrapper-owl-carousel')
-                div(class="owl-carousel owl-theme" )
-                    div(class="item")
-                        img(src="images/home-page/doors-system-homePage.jpg" alt="")
-                        span(class='category') 
-                            a(href="doors-system.html") doors system
-                    div(class="item")
-                        img(src="images/home-page/loading-docks-homePage.jpg" alt="")
-                        span(class='category') 
-                            a(href="category.html") loading docks
-                    div(class="item")
-                        img(src="images/slider/6.jpg" alt="")
-                        span(class='category') 
-                            a(href="category.html") solar energy 
-
-
+    div(class='container-fluid')
+      //- slider
+      div(class='wrapper-owl-carousel')
+        div(class="owl-carousel owl-theme" )
+          div(class="item")
+            img(src="images/home-page/doors-system-homePage.jpg" alt="")
+            span(class='category') 
+              a(href="doors-system.html") doors system
+          div(class="item")
+            img(src="images/home-page/loading-docks-homePage.jpg" alt="")
+            span(class='category') 
+              a(href="category.html") loading docks
+          div(class="item")
+            img(src="images/2022/1.jpeg" alt="")
+            span(class='category') 
+              a(href="category.html") solar energy 
 
 
 
 
 
 
-        include global/global.pug
 
-        include script/script.pug
 
-        //- Jquery Tools
-        script(src="js/libs/plugin-work/plugin-work.js")
-        script(src="http://localhost:35729/livereload.js")
+    include global/global.pug
 
-        //- end body
+    include script/script.pug
+
+    //- Jquery Tools
+    script(src="js/libs/plugin-work/plugin-work.js")
+    script(src="http://localhost:35729/livereload.js")
+
+    //- end body
