@@ -50,10 +50,10 @@ gulp.task("js", function () {
   return gulp
     .src("project/js/**/*.js")
     .pipe(sourcemaps.init())
-    .pipe(concat("script.js"))
+    // .pipe(concat("script.js"))
     .pipe(uglify())
     .pipe(sourcemaps.write("."))
-    .pipe(gulp.dest("dist/js/js"))
+    .pipe(gulp.dest("dist/js"))
     .pipe(notify("Js Task Is Done"))
     .pipe(livereload());
 });
@@ -87,7 +87,7 @@ gulp.task("compressImages", function () {
   );
 });
 
-// =============================== Zip Compress Files =============================== //
+// ========================== Zip Compress Files ============================ //
 gulp.task("compress", function () {
   return gulp
     .src("dist/**/*.*")

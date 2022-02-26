@@ -123,9 +123,10 @@ html {
 // root
 // background: var(--color-3498db);
 :root {
-  --color-3498db: #3498db;
-  --color-fff: #ffffff;
-  --color-000: #0000000;
+  --color-3498db: hsl(204, 70%, 53%);
+  --color-000: #000;
+  --color-fff: #fff;
+  --color-999: #999;
   --color-333: #333333;
   --color-f00: #ff0000;
   --color-080: #008800;
@@ -134,4 +135,27 @@ html {
   --btn-normal-back: #333;
   --btn-normal-color: #fafafa;
   --btn-normal-border: #1877f2;
+
+  // Height
+  --height-200: 200px;
+  --height-250: 250px;
+  --height-300: 300px;
+  --height-350: 350px;
+  --height-400: 400px;
+  --height-450: 450px;
+  --height-500: 500px;
+
+  // 2022  
+  --hue-color: 204;
+  --first-color: hsl(var(--hue-color), 70%, 53%);
+  --first-color-second: hsl(var(--hue-color), 50%, 39%);
+  --first-color-alt: hsl(var(--hue-color), 57%, 53%);
+  --body-color: hsl(var(--hue-color), 70%, 98%);
+
+
+    // Z Index
+  --z-tooltip: 10;
+  --z-fixed: 100;
+  --z-modal: 1000;
 }
+

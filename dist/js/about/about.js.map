@@ -1,0 +1,1 @@
+{"version":3,"file":"about.js","sources":["about/about.js"],"sourcesContent":["var swiper = new Swiper(\".mySwiper\", {\r\n  navigation: {\r\n    nextEl: \".swiper-button-next\",\r\n    prevEl: \".swiper-button-prev\",\r\n  },\r\n});\r\n"],"names":["swiper","Swiper","navigation","nextEl","prevEl"],"mappings":"AAAA,IAAIA,OAAS,IAAIC,OAAO,YAAa,CACnCC,WAAY,CACVC,OAAQ,sBACRC,OAAQ"}
