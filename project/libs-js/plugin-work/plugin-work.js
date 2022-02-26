@@ -57,4 +57,4 @@ $(document).ready(function () {
 });
 
 //
-$("#backVideo").vide("video/rolling-shutters/1.mp4");
+// $("#backVideo").vide("video/rolling-shutters/1.mp4");

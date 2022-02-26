@@ -109,6 +109,11 @@ nav.navbar {
         }
       }
     }
+    .nav-btn{
+      i{
+        cursor: pointer;
+      }
+    }
     // form
     form.d-flex {
       input.form-control.me-2 {
