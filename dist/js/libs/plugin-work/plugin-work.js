@@ -25,35 +25,7 @@ $(document).ready(function () {
     $grid.isotope({ filter: filterValue });
   });
 
-  // owl
-  $(".owl-carousel").owlCarousel({
-    loop: true,
-    margin: 20,
-    nav: true,
-    dots: false,
-    autoplay: true,
-    smartSpeed: 1000,
-    responsive: {
-      0: {
-        items: 1,
-      },
-      600: {
-        items: 2,
-      },
-      1000: {
-        items: 2,
-      },
-    },
-  });
-  // mousewheel owl-carousel
-  $(".owl-carousel").on("mousewheel", ".owl-stage", function (e) {
-    if (e.deltaY > 0) {
-      $(".owl-carousel").trigger("next.owl");
-    } else {
-      $(".owl-carousel").trigger("prev.owl");
-    }
-    e.preventDefault();
-  });
+  
 });
 
 //

@@ -1,0 +1,196 @@
+@import "../mixin/mixin";
+
+// Header
+
+// navbar bootstrap
+
+nav.nav-index2 {
+  @include transitionAll(all, 0.5s, ease);
+  background-color: $color-fff;
+  @include md-media {
+    width: 66.666%;
+  }
+  // a like logo
+  .navbar-brand {
+    font-weight: bold;
+    font-size: 1rem;
+    img {
+      width: 100px;
+      margin: auto;
+      display: block;
+    }
+  }
+  // button dropdown menu for mobail phone
+  .navbar-toggler {
+    // span = img
+    .navbar-toggler-icon {
+    }
+  }
+  // div = container for ul
+  div.collapse.navbar-collapse {
+    // ul link
+    ul.navbar-nav {
+      @include xs-media {
+        // if you went to li start left in rtl
+        // align-items: flex-start;
+        // if you went to li start left in rtl
+        // align-items: flex-end;
+      }
+      @include md-media {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      // li
+      li.nav-item {
+        // a
+        a.nav-link {
+          // font-weight: bold;
+          font-size: 1rem;
+          border-bottom: 2px solid transparent;
+
+          // Hover
+          &:hover {
+            font-size: 1rem;
+            color: $main-color;
+
+            /* Medium devices (landscape tablets, 768px and up) */
+            @media only screen and (min-width: 768px) {
+              &::after {
+                width: 2px;
+                height: 10px;
+                content: "";
+                position: absolute;
+                background: #000;
+                top: -10px;
+                left: 0px;
+              }
+              &::before {
+                width: 10px;
+                height: 2px;
+                content: "";
+                position: absolute;
+                background: #000;
+                top: -10px;
+                left: 0px;
+              }
+            }
+          }
+        }
+        // a active
+        a.nav-link.active {
+          /* Medium devices (landscape tablets, 768px and up) */
+          @media only screen and (min-width: 768px) {
+            &::after {
+              width: 2px;
+              height: 10px;
+              content: "";
+              position: absolute;
+              background: #000;
+              top: -10px;
+              left: 0px;
+            }
+            &::before {
+              width: 10px;
+              height: 2px;
+              content: "";
+              position: absolute;
+              background: #000;
+              top: -10px;
+              left: 0px;
+            }
+          }
+        }
+      }
+      // li dropdown
+      li.nav-item.dropdown {
+        // a link name
+        a.nav-link.dropdown-toggle {
+        }
+        // div dropdown
+        ul.dropdown-menu {
+          li {
+            // a item
+            a.dropdown-item {
+            }
+          }
+        }
+      }
+    }
+    .nav-btn {
+      i {
+        cursor: pointer;
+      }
+    }
+    // form
+    form.d-flex {
+      input.form-control.me-2 {
+      }
+      button.btn.btn-outline-success {
+      }
+    }
+  }
+}
+
+// nav new style
+
+// navbar change color
+nav.navbar.css-nav-change-color {
+  background-color: $main-color !important;
+  @include boxShadow(-1px, 0px, 10px, #000);
+  @include transitionAll(all, 0.5s, ease);
+  // a like logo
+  .navbar-brand {
+    color: #fff !important;
+  }
+  // button dropdown menu for mobail phone
+  .navbar-toggler {
+    // span = img
+    .navbar-toggler-icon {
+    }
+  }
+  // div = container for ul
+  div.collapse.navbar-collapse {
+    // ul link
+    ul.navbar-nav {
+      @include xs-media {
+        // if you went to li start left in rtl
+        // align-items: flex-start;
+        // if you went to li start left in rtl
+        // align-items: flex-end;
+      }
+      // li
+      li.nav-item {
+        // a
+        a.nav-link {
+          color: #fff !important;
+        }
+        // a active
+        a.nav-link.active {
+        }
+      }
+      // li dropdown
+      li.nav-item.dropdown {
+        // a link name
+        a.nav-link.dropdown-toggle {
+        }
+        // div dropdown
+        ul.dropdown-menu {
+          li {
+            // a item
+            a.dropdown-item {
+            }
+          }
+        }
+      }
+    }
+    // form
+    form.d-flex {
+      input.form-control.me-2 {
+      }
+      button.btn.btn-outline-success {
+      }
+    }
+  }
+}
+
+// End Slider Gallery
